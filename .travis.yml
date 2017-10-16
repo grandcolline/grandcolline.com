@@ -1,3 +1,6 @@
+branches:
+  only:
+  - master
 language: python
 python:
   - "3.5"
@@ -13,8 +16,6 @@ deploy:
   endpoint: $AWS_S3_ENDPOINT
   region: $AWS_REGION
   skip_cleanup: true
-  on: 
-    branch: master
 after_deploy:
   - aws configure set preview.cloudfront true
   - aws cloudfront create-invalidation --distribution-id $AWS_CLOUDFRONT_DISTRIBUTION_ID --paths "/*"
