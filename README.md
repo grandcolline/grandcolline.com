@@ -3,6 +3,6 @@
 [![Build Status](https://travis-ci.org/grandcolline/grandcolline.com.svg?branch=master)](https://travis-ci.org/grandcolline/grandcolline.com)
 
 ### URL
-- master: https://grandcolline.com
-- gh-pages: https://grandcolline.github.io/grandcolline.com
+- https://grandcolline.com
+- https://grandcolline.github.io/grandcolline.com#development=1 (TEST)
 
