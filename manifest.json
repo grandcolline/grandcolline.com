@@ -1,12 +1,14 @@
 {
-  "lang": "ja",
-  "name": "grandcolline",
-  "short_name": "gc",
-  "icons": [{
-        "src": "./img/app-icon.png",
-        "sizes": "144x144",
-        "type": "image/png"
-      }],
-  "start_url": "https://grandcolline.com/",
-  "display": "standalone"
+	"lang": "ja",
+	"name": "grandcolline",
+	"short_name": "gc",
+	"icons": [{
+		"src": "./img/app-icon.png",
+		"sizes": "144x144",
+		"type": "image/png"
+	}],
+	"background_color": "#fffff9",
+	"theme_color": "#ffbf00",
+	"start_url": "https://grandcolline.com/",
+	"display": "standalone"
 }
