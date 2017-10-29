@@ -3,9 +3,25 @@
 	"name": "grandcolline",
 	"short_name": "gc",
 	"icons": [{
-		"src": "./img/app-icon.png",
-		"sizes": "144x144",
-		"type": "image/png"
+		"src": "./img/icons/grandcolline_128.png",
+		"type": "image/png",
+		"sizes": "128x128"
+	}, {
+		"src": "./img/icons/grandcolline_152.png",
+		"type": "image/png",
+		"sizes": "152x152"
+	}, {
+		"src": "./img/icons/grandcolline_144.png",
+		"type": "image/png",
+		"sizes": "144x144"
+	}, {
+		"src": "./img/icons/grandcolline_192.png",
+		"type": "image/png",
+		"sizes": "192x192"
+	}, {
+		"src": "./img/icons/grandcolline_480.png",
+		"type": "image/png",
+		"sizes": "512x512"
 	}],
 	"background_color": "#fffff9",
 	"theme_color": "#ffbf00",
