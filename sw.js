@@ -2,11 +2,11 @@ let version = '0.1';
 var CACHE_NAME = 'grandcolline-cache-v0.1';
 var urlsToCache = [
 	'/',
-	'./img/icon/grandcolline_128.png',
-	'./img/icon/grandcolline_144.png',
-	'./img/icon/grandcolline_152.png',
-	'./img/icon/grandcolline_192.png',
-	'./img/icon/grandcolline_480.png',
+	'./img/icons/grandcolline_128.png',
+	'./img/icons/grandcolline_144.png',
+	'./img/icons/grandcolline_152.png',
+	'./img/icons/grandcolline_192.png',
+	'./img/icons/grandcolline_480.png',
 	'https://cdn.ampproject.org/v0.js ',
 	'https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js',
 	'https://fonts.gstatic.com/s/jura/v9/x6RZE5IaGzhqlvflqX29zvesZW2xOQ-xsNqO47m55DA.ttf'
