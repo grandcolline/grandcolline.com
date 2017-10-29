@@ -2,7 +2,6 @@ let version = '0.1';
 var CACHE_NAME = 'grandcolline-cache-v0.1';
 var urlsToCache = [
 	'/',
-	'./img/grandcolline.png',
 	'./img/icon/grandcolline_128.png',
 	'./img/icon/grandcolline_144.png',
 	'./img/icon/grandcolline_152.png',
