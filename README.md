@@ -6,5 +6,3 @@
 
 ### URL
 - https://grandcolline.com
-- https://grandcolline.github.io/grandcolline.com#development=1 (For Develop)
-
