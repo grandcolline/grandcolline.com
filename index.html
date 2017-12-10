@@ -20,6 +20,7 @@
 	<!-- amp -->
 	<script async="" src="https://cdn.ampproject.org/v0.js"></script>
 	<script async custom-element="amp-install-serviceworker" src="https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js"></script>
+	<script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
 	<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 
 	<!-- css -->
@@ -72,26 +73,89 @@
 
 </head>
 <body>
+	<!-- Install ServiceWorker -->
 	<amp-install-serviceworker src="/sw.js" layout="nodisplay" data-iframe-src="https://grandcolline.com/install-sw.html"></amp-install-serviceworker>
+
+	<!-- Google Analytics -->
+	<amp-analytics type="googleanalytics">
+		<script type="application/json">
+			{
+				"vars": {
+					"account": "UA-80910994-2"
+				},
+				"triggers": {
+					"trackPageview": {
+						"on": "visible",
+						"request": "pageview"
+					},
+					"clickOnTwitterLink" : {
+						"on": "click",
+						"selector": "#twitter_link",
+						"request": "event",
+						"vars": {
+							"eventCategory": "ui-components",
+							"eventAction": "header-click"
+						}
+					},
+					"clickOnTumblrLink" : {
+						"on": "click",
+						"selector": "#tumblr_link",
+						"request": "event",
+						"vars": {
+							"eventCategory": "ui-components",
+							"eventAction": "header-click"
+						}
+					},
+					"clickOnInstagramLink" : {
+						"on": "click",
+						"selector": "#instagram_link",
+						"request": "event",
+						"vars": {
+							"eventCategory": "ui-components",
+							"eventAction": "header-click"
+						}
+					},
+					"clickOnSoundCloudLink" : {
+						"on": "click",
+						"selector": "#soundcloud_link",
+						"request": "event",
+						"vars": {
+							"eventCategory": "ui-components",
+							"eventAction": "header-click"
+						}
+					},
+					"clickOnGithubLink" : {
+						"on": "click",
+						"selector": "#github_link",
+						"request": "event",
+						"vars": {
+							"eventCategory": "ui-components",
+							"eventAction": "header-click"
+						}
+					}
+				}
+			}
+		</script>
+	</amp-analytics>
 
 	<h1>Grandcolline.com</h1>
 	<ul>
 		<li>
-			<a href="https://twitter.com/grandcolline/" target="_blank" rel="noopener noreferrer">Twitter</a>
+			<a id="twitter_link" href="https://twitter.com/grandcolline/" target="_blank" rel="noopener noreferrer">Twitter</a>
 		</li>
 <!--
 		<li>
-			<a href="https://grandcolline.tumblr.com/" target="_blank" rel="noopener noreferrer">Tumblr</a>
+			<a id="tumblr_link" href="https://grandcolline.tumblr.com/" target="_blank" rel="noopener noreferrer">Tumblr</a>
 		</li>
 -->
 		<li>
-			<a href="https://www.instagram.com/grandcolline/" target="_blank" rel="noopener noreferrer">Instagram</a>
+			<a id="instagram_link" href="https://www.instagram.com/grandcolline/" target="_blank" rel="noopener noreferrer">Instagram</a>
 		</li>
 		<li>
-			<a href="https://soundcloud.com/grandcolline/" target="_blank" rel="noopener noreferrer">SoundCloud</a>
+			<a id="soundcloud_link" href="https://soundcloud.com/grandcolline/" target="_blank" rel="noopener noreferrer">SoundCloud</a>
 		</li>
 		<li>
-			<a href="https://github.com/grandcolline/" target="_blank" rel="noopener noreferrer">Github</a>
+			<a id="github_link" href="https://github.com/grandcolline/" target="_blank" rel="noopener noreferrer">Github</a>
 		</li>
 	</ul>
 </body>
