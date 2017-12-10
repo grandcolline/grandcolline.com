@@ -15,7 +15,7 @@
 	<link rel="manifest" href="./manifest.json">
 	<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 	<meta content="#ffbf00" name="theme-color">
-	<meta name="description" content="1991年生まれ。webエンジニア。音楽とか映画とかプログラミングとか。">
+	<meta name="description" content="1991年生まれ。webエンジニア。音楽とか映画とかアイドルとかプログラミングとか。">
 
 	<!-- amp -->
 	<script async="" src="https://cdn.ampproject.org/v0.js"></script>
@@ -57,6 +57,19 @@
 			color: #ffbf00;
 		}
 	</style>
+
+	<!-- Structured data -->
+	<script type="application/ld+json">
+		{
+			"@context": "http://schema.org/",
+			"@type": "WebSite",
+			"name": "grandcolline",
+			"url": "https://grandcolline.com/",
+			"image": "https://grandcolline.com/img/icons/grandcolline_192.png",
+			"description": "1991年生まれ。webエンジニア。音楽とか映画とかアイドルとかプログラミングとか。"
+		}
+	</script>
+
 </head>
 <body>
 	<amp-install-serviceworker src="/sw.js" layout="nodisplay" data-iframe-src="https://grandcolline.com/install-sw.html"></amp-install-serviceworker>
