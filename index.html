@@ -5,7 +5,7 @@
 
 -->
 
-<html lang="ja">
+<html ⚡ lang="ja">
 <head>
 	<meta charset="utf-8">
 	<title>grandcolline</title>
@@ -16,10 +16,15 @@
 	<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 	<meta content="#ffbf00" name="theme-color">
 	<meta name="description" content="1991年生まれ。webエンジニア。音楽とか映画とかアイドルとかプログラミングとか。">
-	<link rel="amphtml" href="https://grandcolline.com/amp.html">
+
+	<!-- amp -->
+	<script async="" src="https://cdn.ampproject.org/v0.js"></script>
+	<script async custom-element="amp-install-serviceworker" src="https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js"></script>
+	<script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+	<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 
 	<!-- css -->
-	<style>
+	<style amp-custom="">
 		@font-face {
 			font-family: 'Jura';
 			font-style: normal;
@@ -67,47 +72,56 @@
 		}
 	</script>
 
-	<!-- Install ServiceWorker -->
-	<script type="text/javascript">
-		var swsource = "/sw.js";
-		if("serviceWorker" in navigator) {
-			navigator.serviceWorker.register(swsource).then(function(reg){
-				console.log('SW scope: ', reg.scope);
-			}).catch(function(err) {
-				console.log('SW registration failed: ', err);
-			});
-		};
-	</script>
-
-	<!-- Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-80910994-2"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-		gtag('config', 'UA-80910994-2');
-	</script>
 </head>
 <body>
+	<!-- Install ServiceWorker -->
+	<amp-install-serviceworker src="/sw.js" layout="nodisplay" data-iframe-src="https://grandcolline.com/install-sw.html"></amp-install-serviceworker>
+
+	<!-- Google Analytics -->
+	<amp-analytics type="googleanalytics">
+		<script type="application/json">
+			{
+				"vars": {
+					"account": "UA-80910994-2"
+				},
+				"triggers": {
+					"trackPageview": {
+						"on": "visible",
+						"request": "pageview"
+					},
+					"clickOnSnsLink" : {
+						"on": "click",
+						"selector": ".sns_link",
+						"request": "event",
+						"vars": {
+							"eventCategory": "sns-links",
+							"eventAction": "click-on-${name}",
+							"eventLabel": "click"
+						}
+					}
+				}
+			}
+		</script>
+	</amp-analytics>
 
 	<h1>Grandcolline.com</h1>
 	<ul>
 		<li>
-			<a class="sns_link" href="https://twitter.com/grandcolline/" target="_blank" onclick="ga('send', 'event', 'sns-link', 'click-on-twitter', 'click');" >Twitter</a>
+			<a class="sns_link" data-vars-name="twitter" href="https://twitter.com/grandcolline/" target="_blank" rel="noopener noreferrer">Twitter</a>
 		</li>
 <!--
 		<li>
-			<a class="sns_link" href="https://grandcolline.tumblr.com/" target="_blank" >Tumblr</a>
+			<a class="sns_link" data-vars-name="tumblr" href="https://grandcolline.tumblr.com/" target="_blank" rel="noopener noreferrer">Tumblr</a>
 		</li>
 -->
 		<li>
-			<a class="sns_link" href="https://www.instagram.com/grandcolline/" target="_blank" onclick="ga('send', 'event', 'sns-link', 'click-on-instagram', 'click');">Instagram</a>
+			<a class="sns_link" data-vars-name="instagram" href="https://www.instagram.com/grandcolline/" target="_blank" rel="noopener noreferrer">Instagram</a>
 		</li>
 		<li>
-			<a class="sns_link" href="https://soundcloud.com/grandcolline/" target="_blank" onclick="ga('send', 'event', 'sns-link', 'click-on-soundcloud', 'click');">SoundCloud</a>
+			<a class="sns_link" data-vars-name="soundcloud" href="https://soundcloud.com/grandcolline/" target="_blank" rel="noopener noreferrer">SoundCloud</a>
 		</li>
 		<li>
-			<a class="sns_link" href="https://github.com/grandcolline/" target="_blank" onclick="ga('send', 'event', 'sns-link', 'click-on-github', 'click');" >Github</a>
+			<a class="sns_link" data-vars-name="github" href="https://github.com/grandcolline/" target="_blank" rel="noopener noreferrer">Github</a>
 		</li>
 	</ul>
 </body>
