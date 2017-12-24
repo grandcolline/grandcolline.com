@@ -1,7 +1,7 @@
-let version = '0.6';
-var CACHE_NAME = 'grandcolline-cache-v0.2';
+let version = '0.7';
+var CACHE_NAME = 'grandcolline-cache-v0.3';
 var urlsToCache = [
-	'/',
+	'/index.html',
 	'/img/icons/grandcolline_192.png',
 	'/img/icons/grandcolline_480.png',
 	'https://cdn.ampproject.org/v0.js ',
