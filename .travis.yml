@@ -7,7 +7,7 @@ python:
 cache: pip
 install:
 - pip install awscli
-script: pwd && ls -l
+script: pwd && ls -l && echo $TRAVIS_BUILD_NUMBER
 deploy:
   provider: s3
   access_key_id: "$AWS_ACCESS_KEY_ID"
