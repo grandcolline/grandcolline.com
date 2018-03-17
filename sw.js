@@ -1,6 +1,6 @@
 let version = '0.10';
-// CACHE_NAMEはビルド時に挿入
-//var CACHE_NAME = 'grandcolline-cache';
+// insert CACHE_NANE when build
+
 var urlsToCache = [
 	'/',
 	'/manifest.json',
@@ -31,6 +31,20 @@ self.addEventListener('fetch', function(event) {
 			}
 			//console.log("don't match cacches: " + event.request.url);
 			return fetch(event.request);
+		})
+	);
+});
+
+self.addEventListener('activate', function(event) {
+	event.waitUntil(
+		caches.keys().then(function(cacheNames) {
+			return Promise.all(
+				cacheNames.filter(function(cacheName) {
+					return (cacheName != CACHE_NAME);
+				}).map(function(cacheName) {
+					return caches['delete'](cacheName);
+				})
+			);
 		})
 	);
 });
