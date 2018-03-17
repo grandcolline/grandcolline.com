@@ -19,8 +19,8 @@
 		"type": "image/png",
 		"sizes": "192x192"
 	}, {
-		"src": "./img/icons/grandcolline_480.png",
-		"type": "image/png",
+		"src": "./img/icons/grandcolline_512.jpg",
+		"type": "image/jpg",
 		"sizes": "512x512"
 	}],
 	"background_color": "#fffff9",
