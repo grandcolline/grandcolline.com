@@ -1,5 +1,6 @@
 let version = '0.10';
-var CACHE_NAME = 'grandcolline-cache-v0.5';
+// CACHE_NAMEはビルド時に挿入
+//var CACHE_NAME = 'grandcolline-cache';
 var urlsToCache = [
 	'/',
 	'/manifest.json',
