@@ -12,8 +12,6 @@ deploy:
   skip_cleanup: true
   on:
     repo: grandcolline/grandcolline.com
-after_deploy:
-- aws cloudfront create-invalidation --distribution-id $AWS_CLOUDFRONT_DISTRIBUTION_ID --paths "/*"
 branches:
   only:
   - master
