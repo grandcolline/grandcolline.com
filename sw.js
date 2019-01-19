@@ -1,4 +1,4 @@
-let version = '0.10';
+let version = '0.11';
 // insert CACHE_NANE when build
 
 var urlsToCache = [
@@ -6,6 +6,7 @@ var urlsToCache = [
 	'/manifest.json',
 	'/img/icons/grandcolline_192.png',
 	'/img/icons/grandcolline_480.png',
+	'/img/icons/grandcolline_512.png',
 	'https://cdn.ampproject.org/v0.js ',
 	'https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js',
 	'https://cdn.ampproject.org/v0/amp-analytics-0.1.js',
