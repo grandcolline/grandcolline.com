@@ -1,20 +1,24 @@
 branches:
   only:
   - master
-language: node_js
-node_js:
-  - 7
+language: python
+python:
+- '3.5'
+cache: pip
 install:
-- yarn
+- pip install awscli
 script: sed -i -e "2i var CACHE_NAME = \'grandcolline-cache-v$TRAVIS_BUILD_NUMBER\';" ./sw.js
-script:
-- yarn run lint
-- yarn run build
 deploy:
   provider: s3
-  skip_cleanup: true
   access_key_id: "$AWS_ACCESS_KEY_ID"
   secret_access_key: "$AWS_SECRET_ACCESS_KEY"
   bucket: "$AWS_S3_BUCKET"
+  endpoint: "$AWS_S3_ENDPOINT"
   region: "$AWS_REGION"
-  acl: public_read
+  skip_cleanup: true
+after_deploy:
+- aws configure set preview.cloudfront true
+- aws cloudfront create-invalidation --distribution-id $AWS_CLOUDFRONT_DISTRIBUTION_ID --paths "/*"
+notifications:
+  slack:
+    secure: CDvff8QbR/nWDUaJ3GO9qJpazmmm+RryRA2lUCdy6BkllmMv9jlaEVnb6YJ+NpkLlAlJkKDNBKq2GVFK9qPs5EWGKh5UwIlQuGYkTcushGMC2bITFa7USDYNdvunPooSiyyHvEB8vsYKmeTdj2AMtvHqDH8+Xid0exgbcEuSI0wevjrGAcsz88y55zpr3Oko955a1UpYsrQJQQ5HpO4l2AkSbu10u5cQNwZb5CPo960H5XuzoFaS2fkmIKAzQWqCyvW6CVtAqzrC2S+wmdl3CIgt8eNugN6FDKxWBaXGIWHVyz5cziSqUxqYfQn7es6qXPoB6v3k/AaWMQtlv82YVoXDjHR+dlfXXVZZndkBwYuFW/65exaaLkr5BBdW+eqUfrXrk+ipSFWqibYObGPP0Oe0inMNAaor8OStkagu14zinotmEtck3jw8hLs0er53l4ROq4A5ng9lIW6VF5MACjX7D+AN3AqEL70Uw08uyPUPj8AOyAZVzNghSm/cZ8YoMntfYU7rwAe3lWjWpqEbxgE5Ero7+efCmanfUcRiq7Mf8DsDL1b+c2JVM2xDW1/u9leZ8qX/AQlfc3z35tYqOIzApxExn2uj7PuDCa/ZEIAnLE58dYZ9hEWrCYvsxKkPwFLlhZvqc+M0R9B6kBInHVwaqPrI+gNRvLi4QAeSeIw=
