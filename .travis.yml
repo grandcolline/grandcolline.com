@@ -1,8 +1,8 @@
 language: bash
 script:
   - sed -i -e "2i var CACHE_NAME = \'grandcolline-cache-v$TRAVIS_BUILD_NUMBER\';" ./sw.js
-  - jq --version
-  - cat manifest.json | jq -c . > manifest.json
+  - MANIFEST=$(cat manifest.json | jq -c .)
+  - echo $MANIFEST > manifest.json
 deploy:
   provider: s3
   access_key_id: "$AWS_ACCESS_KEY_ID"
