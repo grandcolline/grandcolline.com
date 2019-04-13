@@ -1,9 +1,8 @@
 language: bash
 script:
   - sed -i -e "2i var CACHE_NAME = \'grandcolline-cache-v$TRAVIS_BUILD_NUMBER\';" ./sw.js
-  - mkdir -p ~/bin && curl -sSL -o ~/bin/jq https://github.com/stedolan/jq/releases/download/jq-1.5/jq-linux64 && chmod +x ~/bin/jq
-  - export PATH=$PATH:~/bin
-  - jq -version
+  - jq --version
+  - cat manifest.json | jq -c . > manifest.json
 deploy:
   provider: s3
   access_key_id: "$AWS_ACCESS_KEY_ID"
