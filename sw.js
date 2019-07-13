@@ -10,7 +10,11 @@ var urlsToCache = [
 	'https://cdn.ampproject.org/v0.js ',
 	'https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js',
 	'https://cdn.ampproject.org/v0/amp-analytics-0.1.js',
-	'https://fonts.gstatic.com/s/oswald/v23/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUtiYySUhiCXABTV.woff'
+	'https://fonts.gstatic.com/s/oswald/v23/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUtiYySUhiCXABTV.woff'
+	'https://fonts.gstatic.com/s/oswald/v23/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUJiYySUhiCXABTV.woff'
+	'https://fonts.gstatic.com/s/oswald/v23/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUliYySUhiCXABTV.woff'
+	'https://fonts.gstatic.com/s/oswald/v23/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUhiYySUhiCXABTV.woff'
+	'https://fonts.gstatic.com/s/oswald/v23/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUZiYySUhiCXAA.woff'
 ];
 
 self.addEventListener('install', function(event) {
