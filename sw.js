@@ -1,4 +1,4 @@
-let version = '0.11';
+let version = '0.12';
 // insert CACHE_NANE when build
 
 var urlsToCache = [
@@ -10,7 +10,7 @@ var urlsToCache = [
 	'https://cdn.ampproject.org/v0.js ',
 	'https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js',
 	'https://cdn.ampproject.org/v0/amp-analytics-0.1.js',
-	'https://fonts.gstatic.com/s/jura/v9/x6RZE5IaGzhqlvflqX29zvesZW2xOQ-xsNqO47m55DA.ttf'
+	'https://fonts.gstatic.com/s/oswald/v23/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUtiYySUhiCXABTV.woff'
 ];
 
 self.addEventListener('install', function(event) {
