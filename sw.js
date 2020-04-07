@@ -1,5 +1,4 @@
-let version = '0.14';
-// insert CACHE_NANE when build
+let version = '0.15';
 
 var urlsToCache = [
 	'/',
