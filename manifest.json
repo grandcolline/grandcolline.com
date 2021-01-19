@@ -5,7 +5,8 @@
 	"icons": [{
 		"src": "./img/icons/grandcolline_128.png",
 		"type": "image/png",
-		"sizes": "128x128"
+		"sizes": "128x128",
+		"purpose": "any maskable"
 	}, {
 		"src": "./img/icons/grandcolline_152.png",
 		"type": "image/png",
@@ -27,4 +28,4 @@
 	"theme_color": "#ffbf00",
 	"start_url": "index.html",
 	"display": "standalone"
-}
+}"
