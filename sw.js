@@ -1,5 +1,5 @@
-let version = '0.16';
-var CACHE_NAME = 'grandcolline-cache-v85';
+let version = '0.17';
+var CACHE_NAME = 'grandcolline-cache-v86';
 
 var urlsToCache = [
 	'/',
@@ -7,6 +7,7 @@ var urlsToCache = [
 	'/img/icons/grandcolline_192.png',
 	'/img/icons/grandcolline_480.png',
 	'/img/icons/grandcolline_512.png',
+	'/img/icons/grandcolline_maskable_192.png',
 	'https://cdn.ampproject.org/v0.js ',
 	'https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js',
 	'https://cdn.ampproject.org/v0/amp-analytics-0.1.js',
