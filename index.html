@@ -24,6 +24,17 @@
     <!-- Font Awesome -->
     <link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.css">
 
+    <!-- PWA -->
+    <link rel="manifest" href="manifest.json">
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('sw.js').then((reg) => {
+          console.log('Service worker registered.', reg);
+        });
+      }
+    </script>
+
+    <!-- CSS -->
     <style>
       body {
         margin: 0;
@@ -33,7 +44,7 @@
         background-color: #FFFEFC;
         -webkit-font-smoothing: antialiased;
         text-rendering: optimizelegibility;
-        font-size: 20px;
+        font-size: 18px;
       }
 
       header {
@@ -48,7 +59,7 @@
       }
 
       .about {
-        font-size: 1.2em;
+        font-size: 1.3em;
       }
 
       .icon {

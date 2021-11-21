@@ -1,6 +1,6 @@
 # grandcolline.com
 
-シンプルなPWAMPの静的ページ
+シンプルなPWAの静的ページ
 
 ### URL
 - https://www.grandcolline.com
