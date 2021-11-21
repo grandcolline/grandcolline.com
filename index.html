@@ -6,6 +6,7 @@
     <meta name="title" content="grandcolline">
     <meta name="description" content="I'm Software developer from Tokyo. Lover of Movie & Music">
     <meta content="#FFFEFC" name="theme-color">
+    <link rel="manifest" href="manifest.json">
 
     <!-- Icon Setting -->
     <link rel="shortcut icon" href="img/icons/grandcolline_maskable_192.png">
@@ -23,16 +24,6 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.css">
-
-    <!-- PWA -->
-    <link rel="manifest" href="manifest.json">
-    <script>
-      if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('sw.js').then((reg) => {
-          console.log('Service worker registered.', reg);
-        });
-      }
-    </script>
 
     <!-- CSS -->
     <style>
@@ -128,4 +119,12 @@
       </p>
     </div>
   </body>
+  <!-- PWA: Register Service Worker -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js').then((reg) => {
+        console.log('Service worker registered.', reg);
+      });
+    }
+  </script>
 </html>
