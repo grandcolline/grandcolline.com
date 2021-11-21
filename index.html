@@ -36,12 +36,29 @@
 
     <!-- CSS -->
     <style>
+      /* ----- 色の設定 ----- */
+      body {
+        background-color: #FFFEFC;
+        color: #6a6359;
+      }
+      a {
+        color: #6a6359;
+      }
+      @media (prefers-color-scheme: dark) {
+        body {
+          background-color: #15202B;
+          color: #fff;
+        }
+        a {
+          color: #fff;
+        }
+      }
+      /* --------------------- */
+
       body {
         margin: 0;
         border: 0;
         font-family: "Open Sans",HelveticaNeue-Light,sans-serif;
-        color: #6a6359;
-        background-color: #FFFEFC;
         -webkit-font-smoothing: antialiased;
         text-rendering: optimizelegibility;
         font-size: 18px;
@@ -75,7 +92,6 @@
       .sns_link {
         text-decoration: none;
         margin: 0 3px;
-        color: #6a6359;
       }
 
       .sns_link:hover {
