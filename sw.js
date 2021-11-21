@@ -1,14 +1,11 @@
 let version = '0.18';
-var CACHE_NAME = 'grandcolline-cache-v89';
+var CACHE_NAME = 'grandcolline-cache-v90';
 
 var urlsToCache = [
   '/',
   '/manifest.json',
   '/img/icons/grandcolline_192.png',
-  '/img/icons/grandcolline_480.png',
-  '/img/icons/grandcolline_512.png',
   '/img/icons/grandcolline_maskable_192.png',
-  'https://fonts.googleapis.com/css?family=Open+Sans:300,400,700',
   'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.css'
 ];
 
