@@ -1,178 +1,104 @@
-<!doctype html>
-<!---
+<!DOCTYPE html>
+<html lang="ja-jp">
+  <head>
+    <title>grandcolline</title>
 
-明日から本気出す
+    <meta name="title" content="grandcolline">
+    <meta name="description" content="I'm Software developer from Tokyo. Lover of Movie & Music">
+    <meta content="#FFFEFC" name="theme-color">
 
--->
+    <!-- Icon Setting -->
+    <link rel="shortcut icon" href="img/icons/grandcolline_maskable_192.png">
+    <link rel="apple-touch-icon" href="img/icons/grandcolline_128.png">
+    <link href="img/splash/apple-touch-startup-image-640x1096.png" media="(device-width: 320px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+    <link href="img/splash/apple-touch-startup-image-750x1294.png" media="(device-width: 375px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link href="img/splash/apple-touch-startup-image-1242x2148.png" media="(device-width: 414px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+    <link href="img/splash/apple-touch-startup-image-1125x2426.png" media="(device-width: 375px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
 
-<html ⚡ lang="ja">
-<head>
-	<meta charset="utf-8">
-	<title>grandcolline</title>
-	<link rel="canonical" href="https://www.grandcolline.com/">
-	<link rel="shortcut icon" href="img/icons/grandcolline_maskable_192.png">
-	<link rel="apple-touch-icon" href="img/icons/grandcolline_128.png">
-	<link href="img/splash/apple-touch-startup-image-640x1096.png" media="(device-width: 320px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
-	<link href="img/splash/apple-touch-startup-image-750x1294.png" media="(device-width: 375px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
-	<link href="img/splash/apple-touch-startup-image-1242x2148.png" media="(device-width: 414px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
-	<link href="img/splash/apple-touch-startup-image-1125x2426.png" media="(device-width: 375px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
-	<link rel="manifest" href="manifest.json">
-	<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-	<meta name="description" content="Web Developer in Tokyo. Simple Life. Love Music and Movie.">
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-title" content="gc">
-	<meta content="#ffbf00" name="theme-color">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="gc">
 
-	<!-- amp -->
-	<script async="" src="https://cdn.ampproject.org/v0.js"></script>
-	<script async custom-element="amp-install-serviceworker" src="https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js"></script>
-	<script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
-	<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.css">
 
-	<!-- css -->
-	<style amp-custom="">
-		/* --- Font Setting --- */
-		/* cyrillic-ext */
-		@font-face {
-			font-family: 'Oswald';
-			font-style: normal;
-			font-weight: 300;
-			font-display: swap;
-			src: url(https://fonts.gstatic.com/s/oswald/v23/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUtiYySUhiCXABTV.woff) format('woff');
-			unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-		}
-		/* cyrillic */
-		@font-face {
-			font-family: 'Oswald';
-			font-style: normal;
-			font-weight: 300;
-			font-display: swap;
-			src: url(https://fonts.gstatic.com/s/oswald/v23/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUJiYySUhiCXABTV.woff) format('woff');
-			unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-		}
-		/* vietnamese */
-		@font-face {
-			font-family: 'Oswald';
-			font-style: normal;
-			font-weight: 300;
-			font-display: swap;
-			src: url(https://fonts.gstatic.com/s/oswald/v23/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUliYySUhiCXABTV.woff) format('woff');
-			unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
-		}
-		/* latin-ext */
-		@font-face {
-			font-family: 'Oswald';
-			font-style: normal;
-			font-weight: 300;
-			font-display: swap;
-			src: url(https://fonts.gstatic.com/s/oswald/v23/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUhiYySUhiCXABTV.woff) format('woff');
-			unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-		}
-		/* latin */
-		@font-face {
-			font-family: 'Oswald';
-			font-style: normal;
-			font-weight: 300;
-			font-display: swap;
-			src: url(https://fonts.gstatic.com/s/oswald/v23/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUZiYySUhiCXAA.woff) format('woff');
-			unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-		}
+    <style>
+      body {
+        margin: 0;
+        border: 0;
+        font-family: "Open Sans",HelveticaNeue-Light,sans-serif;
+        color: #6a6359;
+        background-color: #FFFEFC;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizelegibility;
+        font-size: 20px;
+      }
 
-		/* --- Design Setting --- */
-		body {
-			padding: 10%;
-			font-family: 'Oswald', sans-serif;
-			font-size: 1.6em;
-			line-height: 1.6em;
-			text-align: right;
-			color: #3b3b3b;
-		}
-		.box {
-			max-width: 800px;
-			margin: auto;
-		}
-		h1 {
-			font-size: 1.3em;
-			margin-bottom: 10px;
-			border-bottom: solid 1px black;
-			color: #3b3b3b;
-		}
-		h1:first-letter {
-			font-size: 1.3em;
-			color: #ffbf00;
-		}
-		ul {
-			list-style:none;
-		}
-		a {
-			text-decoration:none;
-			color: #3b3b3b;
-		}
-		a:hover {
-			color: #ffbf00;
-		}
-	</style>
+      header {
+        padding: 40px;
+      }
 
-	<!-- Structured Data -->
-	<script type="application/ld+json">
-		{
-			"@context": "http://schema.org/",
-			"@type": "WebSite",
-			"name": "grandcolline",
-			"url": "https://www.grandcolline.com/",
-			"image": "https://www.grandcolline.com/img/icons/grandcolline_192.png",
-			"description": "Web Developer in Tokyo. Simple Life. Love Music and Movie."
-		}
-	</script>
+      .content {
+        max-width: 500px;
+        margin: auto;
+        padding: 5px 10%;
+        display: flex;
+      }
 
-</head>
-<body>
-	<!-- Install ServiceWorker -->
-	<amp-install-serviceworker src="/sw.js" layout="nodisplay" data-iframe-src="https://www.grandcolline.com/install-sw.html"></amp-install-serviceworker>
+      .about {
+        font-size: 1.2em;
+      }
 
-	<!-- Google Analytics -->
-	<amp-analytics type="googleanalytics">
-		<script type="application/json">
-			{
-				"vars": {
-					"account": "UA-80910994-2"
-				},
-				"triggers": {
-					"trackPageview": {
-						"on": "visible",
-						"request": "pageview"
-					},
-					"clickOnSnsLink" : {
-						"on": "click",
-						"selector": ".sns_link",
-						"request": "event",
-						"vars": {
-							"eventCategory": "sns-links",
-							"eventAction": "click-on-${name}",
-							"eventLabel": "click"
-						}
-					}
-				}
-			}
-		</script>
-	</amp-analytics>
+      .icon {
+        border-radius: 54px;
+        width: 64px;
+        height: 64px;
+        margin: -30px 20px -40px 0;
+        display: inline-block;
+        max-width: 100%;
+        box-sizing: border-box;
+      }
 
-	<div class="box">
-		<h1>grandcolline.com</h1>
-		<ul>
-			<li>
-				<a class="sns_link" data-vars-name="twitter" href="https://twitter.com/grandcolline/" target="_blank" rel="noopener noreferrer">Twitter</a>
-			</li>
-			<li>
-				<a class="sns_link" data-vars-name="instagram" href="https://www.instagram.com/grandcolline/" target="_blank" rel="noopener noreferrer">Instagram</a>
-			</li>
-			<li>
-				<a class="sns_link" data-vars-name="soundcloud" href="https://soundcloud.com/grandcolline/" target="_blank" rel="noopener noreferrer">SoundCloud</a>
-			</li>
-			<li>
-				<a class="sns_link" data-vars-name="github" href="https://github.com/grandcolline/" target="_blank" rel="noopener noreferrer">GitHub</a>
-			</li>
-		</ul>
-	</div>
-</body>
+      .sns_link {
+        text-decoration: none;
+        margin: 0 3px;
+        color: #6a6359;
+      }
+
+      .sns_link:hover {
+        color: #ffbf00;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+    </header>
+    <div class="content">
+      <div>
+        <img alt="icon" src="img/icons/grandcolline_maskable_192.png" class="icon">
+      </div>
+      <div class="about">
+        @grandcolline
+        <br />
+        <a class="sns_link" data-vars-name="twitter" href="https://twitter.com/grandcolline/" rel="noopener noreferrer">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a class="sns_link" data-vars-name="instagram" href="https://www.instagram.com/grandcolline/" rel="noopener noreferrer">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a class="sns_link" data-vars-name="github" href="https://github.com/grandcolline/" rel="noopener noreferrer">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </div>
+    <div class="content">
+      <p>
+        I'm Software developer from Tokyo🗼<br>
+        Lover of Movie 🎬 & Music 🎸
+      </p>
+    </div>
+  </body>
 </html>
