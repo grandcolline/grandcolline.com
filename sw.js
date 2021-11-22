@@ -1,5 +1,5 @@
-let version = '0.19';
-var CACHE_NAME = 'grandcolline-cache-v91';
+let version = '0.22';
+var CACHE_NAME = 'grandcolline-cache-v94';
 
 var urlsToCache = [
   '/',
@@ -10,7 +10,8 @@ var urlsToCache = [
   '/img/icons/grandcolline_192.png',
   '/img/icons/grandcolline_512.png',
   '/img/icons/grandcolline_maskable_192.png',
-  'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.css'
+  'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.css',
+  'https://cdn.jsdelivr.net/npm/typed.js@2.0.12'
 ];
 
 self.addEventListener('install', function(event) {
@@ -25,7 +26,6 @@ self.addEventListener('install', function(event) {
 self.addEventListener('fetch', function(event) {
   event.respondWith(
     caches.match(event.request).then(function(response) {
-      // キャッシュがあったのでそのレスポンスを返す
       if (response) {
         //console.log("match cacches: " + event.request.url);
         return response;
