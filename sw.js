@@ -1,5 +1,5 @@
-let version = '0.22';
-var CACHE_NAME = 'grandcolline-cache-v94';
+let version = '0.23';
+var CACHE_NAME = 'grandcolline-cache-v95';
 
 var urlsToCache = [
   '/',
@@ -10,8 +10,7 @@ var urlsToCache = [
   '/img/icons/grandcolline_192.png',
   '/img/icons/grandcolline_512.png',
   '/img/icons/grandcolline_maskable_192.png',
-  'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.css',
-  'https://cdn.jsdelivr.net/npm/typed.js@2.0.12'
+  'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.css'
 ];
 
 self.addEventListener('install', function(event) {
