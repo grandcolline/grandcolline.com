@@ -53,6 +53,15 @@
         font-size: 19px;
       }
 
+      h1 {
+        margin: 0 0 5px 0;
+        font-family: Menlo, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizelegibility;
+        font-size: 1.3em;
+        font-weight: normal;
+      }
+
       header {
         padding: 40px;
       }
@@ -64,23 +73,19 @@
         display: flex;
       }
 
-      .about {
-        font-size: 1.3em;
-      }
-
       .icon {
         border-radius: 54px;
-        width: 64px;
-        height: 64px;
-        margin: -30px 20px -40px 0;
+        width: 70px;
+        height: 70px;
+        margin: -20px 20px -50px 0;
         display: inline-block;
         max-width: 100%;
         box-sizing: border-box;
       }
 
       .sns_link {
+        font-size: 1.3em;
         text-decoration: none;
-        margin: 0 2px;
       }
 
       .sns_link:hover {
@@ -96,9 +101,8 @@
       <div>
         <img alt="icon" src="img/icons/grandcolline_maskable_192.png" class="icon">
       </div>
-      <div class="about">
-        @grandcolline
-        <br />
+      <div>
+        <h1>@grandcolline</h1>
         <a class="sns_link" title="twitter" data-vars-name="twitter" href="https://twitter.com/grandcolline/" rel="noopener noreferrer">
           <i class="fab fa-twitter"></i>
         </a>
