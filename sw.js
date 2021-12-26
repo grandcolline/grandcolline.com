@@ -1,5 +1,5 @@
-let version = '0.25';
-var CACHE_NAME = 'grandcolline-cache-v104';
+let version = '0.26';
+var CACHE_NAME = 'grandcolline-cache-v105';
 
 var urlsToCache = [
   '/',
@@ -9,7 +9,9 @@ var urlsToCache = [
   '/img/icons/grandcolline_144.png',
   '/img/icons/grandcolline_192.png',
   '/img/icons/grandcolline_512.png',
-  '/img/icons/grandcolline_maskable_192.png'
+  '/img/icons/grandcolline_maskable_192.png',
+  '/blog/',
+  '/blog/style.css'
 ];
 
 self.addEventListener('install', function(event) {
