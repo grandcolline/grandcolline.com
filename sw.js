@@ -1,5 +1,5 @@
-let version = '0.24';
-var CACHE_NAME = 'grandcolline-cache-v103';
+let version = '0.25';
+var CACHE_NAME = 'grandcolline-cache-v104';
 
 var urlsToCache = [
   '/',
