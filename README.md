@@ -5,7 +5,7 @@
 ## URL
 - https://www.grandcolline.com
 
-## ローカル確認
+## development
 ```js
 // server install
 $ npm install -g http-server
