@@ -6,17 +6,19 @@
 -->
 <html lang="ja-jp">
   <head>
+    <!-- Meta Data -->
     <title>grandcolline</title>
     <meta name="title" content="grandcolline">
     <meta name="description" content="I'm Software developer from Tokyo🗼 Lover of Movie 🎬 & Music 🎸">
-    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#FFFEFC">
-    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#15202B">
     <link rel="manifest" href="manifest.json">
 
     <!-- Icon Setting -->
-    <link rel="shortcut icon" href="img/icons/grandcolline_maskable_192.png">
-    <link rel="apple-touch-icon" href="img/icons/grandcolline_128.png">
+    <link rel="shortcut icon" href="/img/icons/grandcolline_maskable_192.png">
+    <link rel="apple-touch-icon" href="/img/icons/grandcolline_128.png">
 
+    <!-- Appearance Setting -->
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#FFFEFC">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#15202B">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="gc">
@@ -25,76 +27,10 @@
     <link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.css">
 
     <!-- CSS -->
+    <link rel="stylesheet" href="/style.css">
     <style>
-      html {
-        background-color: #FFFEFC;
-        color: #6a6359;
-        font-family: Menlo, sans-serif;
-        font-size: 18px;
-      }
-      a {
-        color: #6a6359;
-      }
-
-      @media (prefers-color-scheme: dark) {
-        html {
-          background-color: #15202B;
-          color: #c9d1d9;
-        }
-        a {
-          color: #c9d1d9;
-        }
-      }
-
-      @media screen and (max-width: 500px) {
-        html {
-          font-size: 15px;
-        }
-      }
-
-      body {
-        margin: 0;
-        border: 0;
-        -webkit-font-smoothing: antialiased;
-        text-rendering: optimizelegibility;
-      }
-
-      h1 {
-        margin: 0 0 5px 0;
-        -webkit-font-smoothing: antialiased;
-        text-rendering: optimizelegibility;
-        font-size: 1.3em;
-        font-weight: normal;
-      }
-
-      /*
-      h2 {
-        margin: 15px 0 5px 0;
-        -webkit-font-smoothing: antialiased;
-        text-rendering: optimizelegibility;
-        font-size: 19px;
-        font-weight: normal;
-      }
-      */
-
-      header {
-        padding: 40px;
-      }
-
-      .about {
-        max-width: 500px;
-        margin: auto;
-        padding: 5px 10%;
-        display: flex;
-      }
-
-      .content {
-        max-width: 500px;
-        margin: auto;
-        padding: 5px 10%;
-      }
-
-      .icon {
+      h1 { font-weight: normal; }
+     .icon {
         border-radius: 54px;
         width: 70px;
         height: 70px;
@@ -103,23 +39,12 @@
         max-width: 100%;
         box-sizing: border-box;
       }
-
-      .sns_link {
-        font-size: 1.3em;
-        text-decoration: none;
-        padding: 0 3px;
-      }
-
-      .sns_link:hover {
-        color: #ffbf00;
-      }
     </style>
   </head>
 
   <body>
-    <header>
-    </header>
-    <div class="about">
+    <header></header>
+    <div class="info">
       <div>
         <img alt="icon" src="img/icons/grandcolline_maskable_192.png" class="icon">
       </div>
@@ -137,12 +62,13 @@
       </div>
     </div>
 
-    <div class="content">
+    <div class="info">
       <p>
         I'm Software developer from Tokyo🗼<br>
         Lover of Movie 🎬 & Music 🎸
       </p>
     </div>
+    <footer></footer>
 
     <!-- java script -->
     <script>

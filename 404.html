@@ -1,65 +1,38 @@
 <!DOCTYPE html>
 <html lang="ja-jp">
   <head>
-    <title>Not Found | grandcolline</title>
 
-    <meta name="title" content="grandcolline">
-    <meta name="description" content="I'm Software developer from Tokyo. Lover of Movie & Music">
-    <meta content="#FFFEFC" name="theme-color">
+    <!-- Meta Data -->
+    <title>Not Found | grandcolline</title>
+    <meta name="title" content="Not Found">
+    <link rel="manifest" href="manifest.json">
+    <meta name="robots" content="noindex">
 
     <!-- Icon Setting -->
-    <link rel="shortcut icon" href="img/icons/grandcolline_maskable_192.png">
-    <link rel="apple-touch-icon" href="img/icons/grandcolline_128.png">
-    <link href="img/splash/apple-touch-startup-image-640x1096.png" media="(device-width: 320px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
-    <link href="img/splash/apple-touch-startup-image-750x1294.png" media="(device-width: 375px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
-    <link href="img/splash/apple-touch-startup-image-1242x2148.png" media="(device-width: 414px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
-    <link href="img/splash/apple-touch-startup-image-1125x2426.png" media="(device-width: 375px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+    <link rel="shortcut icon" href="/img/icons/grandcolline_maskable_192.png">
+    <link rel="apple-touch-icon" href="/img/icons/grandcolline_128.png">
 
+    <!-- Appearance Setting -->
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#FFFEFC">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#15202B">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="gc">
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.css">
-
+    <!-- CSS -->
+    <link rel="stylesheet" href="/style.css">
     <style>
-      body {
-        margin: 0;
-        border: 0;
-        font-family: "Open Sans",HelveticaNeue-Light,sans-serif;
-        color: #6a6359;
-        background-color: #FFFEFC;
-        -webkit-font-smoothing: antialiased;
-        text-rendering: optimizelegibility;
-        font-size: 20px;
-      }
-      @media (prefers-color-scheme: dark) {
-        body {
-          background-color: #15202B;
-          color: #fff;
-        }
-      }
-
-      header {
-        padding: 40px;
-      }
-
-      .content {
-        max-width: 500px;
-        margin: auto;
-        padding: 5px 10%;
-        display: flex;
-      }
+      h1 { font-weight: normal; }
     </style>
   </head>
 
   <body>
-    <header>
-    </header>
-    <div class="content">
-      404 Not Found 😿
+    <header></header>
+
+    <div class="info">
+      <h1>404 Not Found 😿</h1>
     </div>
+
+    <footer></footer>
   </body>
 </html>
