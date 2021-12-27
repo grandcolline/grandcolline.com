@@ -11,7 +11,7 @@ html {
   font-family: Menlo, sans-serif;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizelegibility;
-  font-size: 15px;
+  font-size: 17px;
 }
 a {
   color: #6a6359;
@@ -24,6 +24,12 @@ a {
   }
   a {
     color: #c9d1d9;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  html {
+    font-size: 15px;
   }
 }
 
@@ -71,13 +77,6 @@ footer {
   max-width: 700px;
   margin: auto;
   padding: 5px 10%;
-}
-
-.info {
-  max-width: 350px;
-  margin: auto;
-  padding: 5px 10%;
-  display: flex;
 }
 
 .date {
