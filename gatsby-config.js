@@ -24,8 +24,6 @@ module.exports = {
         name: `grandcolline`,
         short_name: `gc`,
         start_url: "/",
-        background_color: "#FFFEFC",
-        theme_color: `#ffbf00`,
         display: `standalone`,
         icon: `static/img/icons/grandcolline_512.png`,
       },
