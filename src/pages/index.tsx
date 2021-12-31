@@ -12,7 +12,7 @@ import Seo from "../components/seo"
 const IndexPage = () => {
   return (
     <Layout backUrl="">
-      <Seo description="I'm Software developer in Tokyo🗼. Lover of Movie 🎬 & Music 🎸" />
+      <Seo title="grandcolline" description="I'm Software developer in Tokyo🗼. Lover of Movie 🎬 & Music 🎸" />
 
       <div className="info">
         <div>
