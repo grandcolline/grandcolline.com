@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/grandcolline
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://www.grandcolline.com
+  * I am grandcolline (https://keybase.io/grandcolline) on keybase.
+  * I have a public key ASB9cas0y7qxCRnKEZ9OWGYYFEDuvoi5VRin-W7Ov9C9Lwo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120429126cd19725ae38c5ec854fb3326c934b0de3f2e9809dd497ea6d8ed8318740a",
+      "host": "keybase.io",
+      "kid": "01207d71ab34cbbab10919ca119f4e5866181440eebe88b95518a7f96ecebfd0bd2f0a",
+      "uid": "48f5cdf1769f8e53ca7b148d0c0c0219",
+      "username": "grandcolline"
+    },
+    "merkle_root": {
+      "ctime": 1641025564,
+      "hash": "30b9571dbd51895a451bc647ecbf4e9324aeaeb655251c7e3979e9b26bc9d0088e3fe73da17cedf1b546c888bb0da82d3ef0a5fa0c49d890d78a091f3b84412e",
+      "hash_meta": "daf9055b67321666052b522ac76aa2d2512ef34960552680ed94c7a69b4691c9",
+      "seqno": 21540639
+    },
+    "service": {
+      "entropy": "SiFCcag/lUQYAxq98WV55fNe",
+      "hostname": "www.grandcolline.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.8.0"
+  },
+  "ctime": 1641025615,
+  "expire_in": 504576000,
+  "prev": "179dc46d78e9d9f7044ca61a71eb7ae00fae735a7e64edac5b3803e78b6a01a3",
+  "seqno": 48,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgfXGrNMu6sQkZyhGfTlhmGBRA7r6IuVUYp/luzr/QvS8Kp3BheWxvYWTESpcCMMQgF53EbXjp2fcETKYacet64A+uc1p+ZO2sWzgD54tqAaPEIMoGUGyr1cuqsdufbylYiOhS15grPkZA/Nd2Eai5AkURAgHCo3NpZ8RAHD9UY21cykjna3q5uAze0iUIyalOrElwdDg45RlPrLKui7dR9qhe/7xMWgLztiy77QJnNg6sVws8d+OSH1b+A6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIHfsrXthbKb0+YGku9U6xlm1vLIAxmdPGRruPDgBlF0So3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/grandcolline
+
+==================================================================
