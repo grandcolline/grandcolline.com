@@ -1,0 +1,98 @@
+html
+  background-color: #FFFEFC
+  color: #6a6359
+  font-family: Menlo, sans-serif
+  -webkit-font-smoothing: antialiased
+  text-rendering: optimizelegibility
+  font-size: 17px
+
+a
+  color: #6a6359
+
+@media (prefers-color-scheme: dark)
+  html
+    background-color: #15202B
+    color: #c9d1d9
+
+  a
+    color: #c9d1d9
+
+@media screen and (max-width: 700px)
+  html
+    font-size: 15px
+
+body
+  margin: 0
+  border: 0
+
+h1
+  margin: 0 0 5px 0
+  font-size: 1.4em
+
+h2
+  margin: 30px 0 5px 0
+  font-size: 1em
+
+  &:before
+    content: "## "
+
+h3
+  margin: 20px 0 5px 0
+  font-size: 1em
+
+  &:before
+    content: "### "
+
+header, footer
+  max-width: 700px
+  padding: 15px 10%
+  margin: auto
+  height: 25px
+
+.content
+  max-width: 700px
+  margin: auto
+  padding: 5px 10%
+
+.date
+  font-size: 0.8em
+  text-align: right
+
+a:hover
+  color: #ffbf00
+
+ul
+  list-style: "- "
+  padding-left: 20px
+
+pre
+  background-color: #3b3228
+  color: #c9d1d9
+  padding: 15px 10px
+
+.sns_link
+  font-size: 1.4em
+  text-decoration: none
+  padding: 0 10px
+
+  &:hover
+    color: #ffbf00
+
+.info
+  max-width: 340px
+  margin: auto
+  padding: 5px 10%
+  display: flex
+
+@media screen and (max-width: 700px)
+  .info
+    max-width: 300px
+
+.icon
+  border-radius: 54px
+  width: 70px
+  height: 70px
+  margin: -20px 20px -50px 0
+  display: inline-block
+  max-width: 100%
+  box-sizing: border-box

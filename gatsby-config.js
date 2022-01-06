@@ -28,6 +28,7 @@ module.exports = {
         icon: `static/img/icons/grandcolline_512.png`,
       },
     },
+    `gatsby-plugin-sass`,
     `gatsby-plugin-offline`,
     {
       resolve: `gatsby-plugin-feed`,

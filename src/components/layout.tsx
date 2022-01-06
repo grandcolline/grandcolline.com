@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons"
 
-import "../styles/style.css"
+import "../styles/style.sass"
 
 const Layout = ({ backUrl, children }: { backUrl: string; children: any }) => {
   let header
