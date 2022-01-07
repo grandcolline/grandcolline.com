@@ -8,7 +8,7 @@ const BlogPage = ({ data }: { data: any }) => {
   const posts = data.allMarkdownRemark.nodes
 
   return (
-    <Layout backUrl="">
+    <Layout backUrl="/">
       <Seo title="Blog" description="all blogposts." />
 
       <div className="content">
@@ -26,6 +26,11 @@ const BlogPage = ({ data }: { data: any }) => {
             )
           })}
         </ul>
+        <br />
+
+        <p>
+          <small>RSS Feed is <a href='/blog/rss.xml'>here</a>.</small>
+        </p>
       </div>
     </Layout>
   )
