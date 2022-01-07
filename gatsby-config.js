@@ -62,7 +62,7 @@ module.exports = {
               {
                 allMarkdownRemark(
                   sort: { order: DESC, fields: [frontmatter___date] },
-                  filter: { frontmatter: { slug: { regex: "/^/blogs.*/" } } },
+                  filter: { frontmatter: { slug: { regex: "/^/blog.*/" } } },
                 ) {
                   nodes {
                     frontmatter {
@@ -75,7 +75,7 @@ module.exports = {
                 }
               }
             `,
-            output: "/blogs/rss.xml",
+            output: "/blog/rss.xml",
             title: "grandcolline Blog's RSS Feed",
           },
         ],

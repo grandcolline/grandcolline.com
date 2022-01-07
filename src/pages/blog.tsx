@@ -37,7 +37,7 @@ export const pageQuery = graphql`
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
       limit: 1000
-      filter: { frontmatter: { slug: { regex: "/^/blogs.*/" } } }
+      filter: { frontmatter: { slug: { regex: "/^/blog.*/" } } }
     ) {
       nodes {
         frontmatter {
