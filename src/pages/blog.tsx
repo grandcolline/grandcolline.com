@@ -29,7 +29,9 @@ const BlogPage = ({ data }: { data: any }) => {
         <br />
 
         <p>
-          <small>RSS Feed is <a href='/blog/rss.xml'>here</a>.</small>
+          <small>
+            RSS Feed is <a href="/blog/rss.xml">here</a>.
+          </small>
         </p>
       </div>
     </Layout>

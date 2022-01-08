@@ -1,7 +1,7 @@
 # grandcolline.com
 
-シンプルなGatsbyの静的ページ
+シンプルな Gatsby の静的ページ
 
 ## URL
-- https://www.grandcolline.com
 
+- https://www.grandcolline.com
