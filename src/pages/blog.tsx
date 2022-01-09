@@ -17,7 +17,7 @@ const BlogPage = ({ data }: { data: any }) => {
 
         <h2>Blogposts</h2>
         <ul>
-          {posts.map(post => {
+          {posts.map((post: any) => {
             return (
               <li>
                 <small>{post.frontmatter.date}:&nbsp;</small>

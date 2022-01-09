@@ -17,7 +17,7 @@ module.exports = {
       },
     },
     `gatsby-transformer-remark`,
-    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-react-helmet-async`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -26,6 +26,9 @@ module.exports = {
         start_url: "/",
         display: `standalone`,
         icon: `static/img/icons/grandcolline_512.png`,
+        icon_options: {
+          purpose: `maskable`,
+        },
       },
     },
     `gatsby-plugin-sass`,
