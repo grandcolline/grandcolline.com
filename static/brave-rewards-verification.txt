@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: grandcolline.com
+Token: 359dc5313817751914c057a296df8438e6639bf167b6ffb99350d0d65e5e692c
