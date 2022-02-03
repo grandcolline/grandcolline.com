@@ -1,6 +1,8 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
 
+import { faRss } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
@@ -13,7 +15,13 @@ const BlogPage = ({ data }: { data: any }) => {
 
       <div className="content">
         <h1>Blog</h1>
-        <p>思ったことや勉強メモなど。日々の散文。</p>
+        <p>
+          思ったことや勉強メモなど。日々の散文。
+
+          <a href="/blog/rss.xml">
+            <FontAwesomeIcon icon={faRss} />
+          </a>
+        </p>
 
         <h2>Blogposts</h2>
         <ul>
@@ -26,13 +34,6 @@ const BlogPage = ({ data }: { data: any }) => {
             )
           })}
         </ul>
-        <br />
-
-        <p>
-          <small>
-            RSS Feed is <a href="/blog/rss.xml">here</a>.
-          </small>
-        </p>
       </div>
     </Layout>
   )
