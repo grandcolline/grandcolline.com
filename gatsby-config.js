@@ -79,7 +79,7 @@ module.exports = {
               }
             `,
             output: "/blog/rss.xml",
-            title: "grandcolline Blog's RSS Feed",
+            title: "grandcolline Blog",
           },
         ],
       },
