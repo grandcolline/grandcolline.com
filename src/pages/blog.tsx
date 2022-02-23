@@ -17,7 +17,6 @@ const BlogPage = ({ data }: { data: any }) => {
         <h1>Blog</h1>
         <p>
           思ったことや勉強メモなど。日々の散文。
-
           <a href="/blog/rss.xml">
             <FontAwesomeIcon icon={faRss} />
           </a>
