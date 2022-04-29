@@ -1,6 +1,7 @@
 ---
 slug: "/contents/policy-for-chrome-extention"
 title: "Chrome拡張 プライバシーポリシー"
+date: "2021-12-30T22:12:03.284Z"
 index: false
 ---
 
