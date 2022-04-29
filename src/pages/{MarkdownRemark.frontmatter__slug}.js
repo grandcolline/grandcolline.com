@@ -12,8 +12,6 @@ export default function Template({
     <Markdown
       title={frontmatter.title}
       description={frontmatter.description}
-      date={frontmatter.date}
-      backUrl={frontmatter.backUrl}
       index={frontmatter.index}
     >
       <div dangerouslySetInnerHTML={{ __html: html }} />
@@ -29,8 +27,6 @@ export const pageQuery = graphql`
         slug
         title
         description
-        date(formatString: "yyyy年MM月DD日")
-        backUrl
         index
       }
     }
