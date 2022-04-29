@@ -1,7 +1,9 @@
 import React from "react"
 
-import Layout from "./layout"
+// import Layout from "./layout"
 import Seo from "./seo"
+
+// import "../styles/style.sass"
 
 const Markdown = ({
   title,
@@ -29,14 +31,19 @@ const Markdown = ({
   }
 
   return (
-    <Layout backUrl={backUrl}>
+    <>
       <Seo title={title} description={description} meta={meta} />
-      <div className="content">
-        <h1>{title}</h1>
+
+      <header className="py-3"></header>
+
+      <div className="md:w-700 w-4/5 mx-auto">
+        <h1 className="text-2xl sm:text-3xl font-semibold my-6">{title}</h1>
         <div className="date">{date}</div>
-        {children}
+        <div className="markdown">{children}</div>
       </div>
-    </Layout>
+
+      <footer className="py-5"></footer>
+    </>
   )
 }
 

@@ -1,6 +1,5 @@
 import React from "react"
 import { graphql } from "gatsby"
-
 import Markdown from "../components/markdown"
 
 export default function Template({

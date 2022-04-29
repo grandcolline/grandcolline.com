@@ -1,6 +1,4 @@
 import React from "react"
-
-import Layout from "../components/layout"
 import Seo from "../components/seo"
 
 const IndexPage = () => {
@@ -12,13 +10,12 @@ const IndexPage = () => {
   ]
 
   return (
-    <Layout backUrl="/">
+    <>
       <Seo title="Not Found" description="" meta={meta} />
-
-      <div className="content">
-        <h1 style={{ "font-weight": "normal" }}>404 Not Found 😿</h1>
-      </div>
-    </Layout>
+      <h1 className="font-gilmer font-semibold text-center my-10 text-3xl">
+        404 Not Found
+      </h1>
+    </>
   )
 }
 export default IndexPage
