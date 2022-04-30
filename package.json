@@ -3,7 +3,7 @@
   "description": "A simple web site.",
   "version": "1.0.0",
   "scripts": {
-    "fmt": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "fmt": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md,mdx}\"",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "start": "gatsby develop",

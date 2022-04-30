@@ -1,14 +1,27 @@
 import React from "react"
 import { MDXProvider } from "@mdx-js/react"
-
 import Seo from "./seo"
-// import { Chart, Pullquote } from "./ui"
-// import { Message } from "theme-ui"
 
+// mdx内で使えるcomponentsの定義
 const shortcodes = { Seo }
 
-export default function Layout({ children }: { children: any }) {
+const Layout = ({
+  // title,
+  // description,
+  // index,
+  children,
+}: {
+  // title: string
+  // description: string
+  // index: boolean
+  children: any
+}) => {
   return (
-    <MDXProvider components={shortcodes}> aaaa {children}</MDXProvider>
+    <>
+      <div className="markdown">
+        <MDXProvider components={shortcodes}>{children}</MDXProvider>
+      </div>
+    </>
   )
 }
+export default Layout
