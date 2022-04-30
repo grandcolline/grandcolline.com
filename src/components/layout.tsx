@@ -8,9 +8,11 @@ const shortcodes = { Seo }
 const Layout = ({ children, }: { children: any }) => {
   return (
     <>
-      <div className="markdown">
+      <header className="py-3"></header>
+      <div className="content">
         <MDXProvider components={shortcodes}>{children}</MDXProvider>
       </div>
+      <footer className="py-3"></footer>
     </>
   )
 }
