@@ -6,15 +6,15 @@ module.exports = {
     author: `grandcolline`,
   },
   plugins: [
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `markdown`,
-        path: `${__dirname}/src/markdowns`,
-      },
-    },
+    // {
+    //   resolve: `gatsby-source-filesystem`,
+    //   options: {
+    //     name: `markdown`,
+    //     path: `${__dirname}/src/markdowns`,
+    //   },
+    // },
     `gatsby-plugin-postcss`,
-    `gatsby-transformer-remark`,
+    // `gatsby-transformer-remark`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

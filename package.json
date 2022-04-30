@@ -1,7 +1,7 @@
 {
   "name": "grandcolline.com",
   "description": "A simple web site.",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "scripts": {
     "fmt": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "build": "gatsby build",
@@ -12,14 +12,16 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
+    "@mdx-js/mdx": "^1.0.0",
+    "@mdx-js/react": "^1.0.0",
     "gatsby": "^4.13.0",
     "gatsby-plugin-feed": "^4.13.0",
     "gatsby-plugin-manifest": "^4.13.0",
     "gatsby-plugin-offline": "^5.13.0",
     "gatsby-source-filesystem": "^4.13.0",
-    "gatsby-transformer-remark": "^5.13.0",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0"
+    "gatsby-plugin-mdx": "^3.13.0",
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0"
   },
   "devDependencies": {
     "@types/react-helmet": "^6.1.5",
