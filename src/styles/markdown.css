@@ -2,55 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  body {
-    @apply font-metro;
-  }
-}
-
 /* --------------------
  *   CSS for Markdown
  * -------------------- */
 /* Global */
-.markdown {
-  @apply leading-relaxed text-sm md:w-700 w-4/5 mx-auto;
-}
+@apply leading-relaxed text-sm;
 
 @screen sm {
-  .markdown {
-    @apply text-base;
-  }
+  @apply text-base;
 }
 
 /* Headers */
-.markdown h1, h2 {
+h2 {
   @apply font-gilmer text-xl my-6 font-semibold;
 }
-.markdown h3,
-.markdown h4,
-.markdown h5,
-.markdown h6 {
+h3, h4, h5, h6 {
   @apply text-lg my-3 font-semibold;
 }
 
 @screen sm {
-  .markdown h1,
-  .markdown h2 {
+  h1, h2 {
     @apply text-2xl;
   }
-  .markdown h3,
-  .markdown h4,
-  .markdown h5,
-  .markdown h6 {
+  h3, h4, h5, h6 {
     @apply text-xl;
   }
 }
 
 /* Links */
-.markdown a {
+a {
   @apply text-blue-600;
 }
-.markdown a:hover {
+a:hover {
   @apply underline;
 }
 /* Paragraph */

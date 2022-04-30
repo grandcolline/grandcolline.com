@@ -8,12 +8,13 @@
   }
 }
 
+
 /* --------------------
  *   CSS for Markdown
  * -------------------- */
 /* Global */
 .markdown {
-  @apply leading-relaxed text-sm md:w-700 w-4/5 mx-auto;
+  @apply leading-relaxed text-sm;
 }
 
 @screen sm {
@@ -23,7 +24,7 @@
 }
 
 /* Headers */
-.markdown h1, h2 {
+.markdown h2 {
   @apply font-gilmer text-xl my-6 font-semibold;
 }
 .markdown h3,

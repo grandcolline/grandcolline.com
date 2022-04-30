@@ -6,6 +6,7 @@ module.exports = {
     author: `grandcolline`,
   },
   plugins: [
+    `gatsby-plugin-mdx`,
     // {
     //   resolve: `gatsby-source-filesystem`,
     //   options: {
