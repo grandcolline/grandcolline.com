@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `grandcolline`,
     description: "",
-    siteUrl: `https://grandcolline.com`,
+    siteUrl: `https://www.grandcolline.com`,
     author: `grandcolline`,
   },
   plugins: [
