@@ -5,17 +5,7 @@ import Seo from "./seo"
 // mdx内で使えるcomponentsの定義
 const shortcodes = { Seo }
 
-const Layout = ({
-  // title,
-  // description,
-  // index,
-  children,
-}: {
-  // title: string
-  // description: string
-  // index: boolean
-  children: any
-}) => {
+const Layout = ({ children, }: { children: any }) => {
   return (
     <>
       <div className="markdown">
