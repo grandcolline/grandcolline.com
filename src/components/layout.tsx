@@ -5,7 +5,7 @@ import Seo from "./seo"
 // mdx内で使えるcomponentsの定義
 const shortcodes = { Seo }
 
-const Layout = ({ children, }: { children: any }) => {
+const Layout = ({ children }: { children: any }) => {
   return (
     <>
       <header className="py-3"></header>
