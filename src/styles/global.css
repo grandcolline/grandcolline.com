@@ -23,7 +23,10 @@
 }
 
 /* Headers */
-.content h1, h2 {
+.content h1 {
+  @apply font-gilmer text-2xl my-6 font-semibold;
+}
+.content h2 {
   @apply font-gilmer text-xl my-6 font-semibold;
 }
 .content h3,
@@ -34,7 +37,9 @@
 }
 
 @screen sm {
-  .content h1,
+  .content h1 {
+    @apply text-3xl;
+  }
   .content h2 {
     @apply text-2xl;
   }
