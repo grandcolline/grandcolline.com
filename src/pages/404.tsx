@@ -1,7 +1,7 @@
 import React from "react"
 import Seo from "../components/seo"
 
-const IndexPage = () => {
+const NotFoundPage = () => {
   const meta = [
     {
       name: `robots`,
@@ -18,4 +18,4 @@ const IndexPage = () => {
     </>
   )
 }
-export default IndexPage
+export default NotFoundPage
