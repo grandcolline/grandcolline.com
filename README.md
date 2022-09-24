@@ -1,6 +1,6 @@
 # grandcolline.com
 
-シンプルな Gatsby の静的ページ
+シンプルな静的ページ
 
 ## URL
 
