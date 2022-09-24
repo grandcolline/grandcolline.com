@@ -18,6 +18,11 @@ export function links() {
   return [
     { rel: "stylesheet", href: styles },
     { rel: "manifest", href: "/manifest.json" },
+    {
+      rel: "apple-touch-icon",
+      sizes: "192x192",
+      href: "/img/icons/grandcolline_196.png",
+    },
   ]
 }
 
