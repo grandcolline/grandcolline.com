@@ -5,9 +5,9 @@
   "display": "standalone",
   "icons": [
     {
-      "purpose": "maskable",
-      "src": "img/icons/grandcolline_144.png",
-      "sizes": "144x144",
+      "purpose": "any",
+      "src": "img/icons/grandcolline_196.png",
+      "sizes": "196x196",
       "type": "image/png"
     },
     {
