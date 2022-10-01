@@ -14,11 +14,11 @@
 | npm  | v8.19.1  |
 
 ```bash
-# package install
+# install package
 $ npm ci
 
 # serve
-$ npm run develop
+$ npm run dev
 
 # build
 $ npm run build
