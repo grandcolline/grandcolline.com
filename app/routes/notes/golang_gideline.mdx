@@ -1,0 +1,219 @@
+---
+meta:
+  title: "My golang code Guidelines"
+---
+
+export const links = () => [
+  {
+    rel: "stylesheet",
+    href: "//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/default.min.css",
+  },
+]
+
+<div className="content">
+
+# My golang code Guidelines
+
+自分が見返す用。golang を書くときのガイドライン。
+
+## Declaring Empty Slices
+
+```go
+// 👍 nilになるケース
+var t []string
+
+// 👎 長さが0になるケース
+t := []string{}
+```
+
+## Don’t Panic
+
+特別な時以外、 `pnic()` を使うな。
+`log.Fatal`も同様（個人的な意見）
+
+## Error Strings
+
+エラーメッセージは全て小文字にしろ。
+
+## Indent Error Flow
+
+早期リターン。余計な `else` は使うな。
+
+```go
+// 👍
+if err != nil {
+    // error handling
+    return
+}
+// normal code
+
+// 👎
+if err != nil {
+    // error handling
+} else {
+    // normal code
+}
+```
+
+```go
+// 👍
+x, err := f()
+if err != nil {
+    // error handling
+    return
+}
+// use x
+
+// 👎
+if x, err := f(); err != nil {
+    // error handling
+    return
+} else {
+    // use x
+}
+```
+
+## Named Result Parameters
+
+基本は関数の戻り値に変数名を定義するな。
+だったら、ドキュメントをかけ。
+
+ある程度の行数の関数で、戻り値の変数を定義したほうがわかりやすい場合は、関数の宣言時に戻り値の変数名も定義しろ。
+
+## Pass Values
+
+数バイトのためにポインタを使うな。
+基本的には以下の基準に従え。
+
+1. ポインタじゃないと期待通りの動作をしない場合はポインタにする
+2. インターフェースはポインタで渡す意味がない
+3. 値だけどポインタっぽいやつは値にする ( `map` / `slice` / `chan` / `func` )
+4. プリミティブな値は値にする (　`int` / `string` )
+5. 大きい struct, array の場合はポインタにする
+6. `[]T vs []*T` の場合は、`[]*T` を使え
+
+## Receiver Type
+
+基本的にはポインタを使え。
+以下は、値の方がいいケースである。
+
+- レシーバが map、func、チャネル ならポインタを使うべきではありません。レシーバがスライスで、メソッドがスライスを作りなおさない場合は、ポインタを使うべきではありません。
+- レシーバが小さく、本来値型であったり(例えば `time.Time` のようなもの) 、変更するフィールドやポインタがない構造体や配列、あるいは `int` や `string` のようなシンプルな型の場合は、レシーバが値であるほうが良い場合があります。
+
+## Receiving Slices and Maps
+
+Slice や map の中にはポインタがあることに注意せよ。
+値渡しをするときは、`copy()` を使うように気をつけよ。
+
+## Variable Names
+
+Golang の変数名は短くあるべき。
+
+## In-Band Errors
+
+エラーや発見できなかった場合は、 `nil` や `-1` を返すのではなく、複数の返り値で、 `error` や `bool` を返せ。
+
+## Slice or Array
+
+固定長であり空でないのであれば、 `array` を使え。それ以外は `slice` を使え。
+
+## Handle Type Assertion Failures
+
+型アサーションは、bool も返ってくるので、必ずエラーハンドリングしろ。
+
+```go
+// 👎 panicを起こすケース
+t := i.(string)
+
+// 👍
+t, ok := i.(string)
+```
+
+## Prefer strconv over fmt
+
+文字を数字にする場合、`strconv` の方がハイパフォーマンス
+
+```go
+// 👍
+s := strconv.Itoa(rand.Int())
+
+// 👎
+s := fmt.Sprint(rand.Int())
+```
+
+## Avoid string-to-byte conversion
+
+固定の文字列からバイト列を何度も生成するのは避けろ。変数を使え。
+
+```go
+// 👍
+data := []byte("Hello world")
+for I := 0; I < b.N; I++ {
+  w.Write(data)
+}
+
+// 👎
+for I := 0; I < b.N; I++ {
+  w.Write([]byte("Hello world"))
+}
+```
+
+## Prefer Specifying Map Capacity Hints
+
+Slice や map の長さにヒントがある場合は、それを初期化時に指定し、余計なアロケーションを減らせ。
+
+```go
+files, _ := ioutil.ReadDir("./files")
+
+// 👍
+m := make(map[string]os.FileInfo, len(files))
+for _, f := range files {
+    m[f.Name()] = f
+}
+
+// 👎
+m := make(map[string]os.FileInfo)
+for _, f := range files {
+    m[f.Name()] = f
+}
+```
+
+## Unnecessary Else
+
+Else をなくせ。同じ代入をするなら、当てはまる場合に上書きしろ。
+
+```go
+// 👍
+a := 10
+if b {
+  a = 100
+}
+
+// 👎
+var a int
+if b {
+  a = 100
+} else {
+  a = 10
+}
+```
+
+## Local Variable Declarations
+
+変数が明示的に設定される場合、`:=` 演算子を使え。
+ただし、空の slice の場合は例外である。
+
+## nil is a valid slice
+
+Slice のチェックをするときは、`== nil` でなく、`len(s) == 0` を使え。
+
+# 参考
+
+- [Go Code Review Comments](https://github.com/golang/go/wiki/CodeReviewComments)
+- [Effective Go](https://golang.org/doc/effective_go.html)
+- [uber-go/guide](https://github.com/uber-go/guide)
+- [golang の 引数、戻り値、レシーバをポインタにすべきか、値にすべきかの判断基準について迷っている - pospome のプログラミング日記](https://www.pospome.work/entry/2017/08/12/195032)
+
+</div>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
