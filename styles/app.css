@@ -96,12 +96,7 @@
 .content table {
   @apply mb-6;
 }
-
-/* Wrap any inline highlights `that are really long`, but don't modify
-   the setting for codeblocks (inside ```), which are rendered in as:
-   <pre><code>...
-*/
-.content :not(pre) > code.language-text {
-  white-space: pre-line;
+/* Code */
+.content pre code {
+  @apply text-sm m-5 p-5 rounded-sm;
 }
-/* purgecss end ignore */

@@ -1,0 +1,50 @@
+---
+meta:
+  title: "サンプルページ"
+---
+export const links = () => [
+  {
+    rel: "stylesheet",
+    href: "//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/default.min.css",
+  },
+];
+
+<div className="content">
+
+# H1
+
+- hoge
+- foo
+  - foo1
+  - foo2
+
+## H2
+
+あいうえお、かきくけこ
+
+> 引用
+
+
+### H3
+
+sample text!! **bold** _Itaric_
+
+```rust
+fn main() {
+    // 起動CLI設定
+    let app: App = App::new("track-search")
+        .version("v0.1.0")
+        .arg(
+            Arg::with_name("envfile")
+                .help("envfile path")
+                .long("envfile")
+                .short('e')
+                .takes_value(true),
+        );
+    let matches = app.get_matches();
+}
+```
+
+</div>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
