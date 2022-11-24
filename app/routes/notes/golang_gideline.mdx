@@ -207,12 +207,17 @@ if b {
 
 Slice のチェックをするときは、`== nil` でなく、`len(s) == 0` を使え。
 
+## Context should be the first parm
+
+Context は、最初のパラメータにすべきで、特別な場合を除き `ctx` という変数名にすべきである。
+
 # 参考
 
 - [Go Code Review Comments](https://github.com/golang/go/wiki/CodeReviewComments)
 - [Effective Go](https://golang.org/doc/effective_go.html)
 - [uber-go/guide](https://github.com/uber-go/guide)
 - [golang の 引数、戻り値、レシーバをポインタにすべきか、値にすべきかの判断基準について迷っている - pospome のプログラミング日記](https://www.pospome.work/entry/2017/08/12/195032)
+- [pkg.go.dev/context](https://pkg.go.dev/context#pkg-overview)
 
 </div>
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
