@@ -24,16 +24,16 @@
 
 /* Headers */
 .content h1 {
-  @apply font-gilmer text-2xl my-6 font-semibold;
+  @apply font-gilmer text-2xl mt-6 mb-4 font-semibold;
 }
 .content h2 {
-  @apply font-gilmer text-xl my-6 font-semibold;
+  @apply font-gilmer text-xl mt-6 mb-4 font-semibold;
 }
 .content h3,
 .content h4,
 .content h5,
 .content h6 {
-  @apply text-lg my-3 font-semibold;
+  @apply text-lg mt-3 mb-2 font-semibold;
 }
 
 @screen sm {
@@ -98,5 +98,5 @@
 }
 /* Code */
 .content pre code {
-  @apply text-sm m-5 p-5 rounded-sm;
+  @apply text-sm m-5 p-5 rounded;
 }
