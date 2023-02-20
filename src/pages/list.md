@@ -1,9 +1,7 @@
 ---
-meta:
-  title: List | grandcolline
+layout: "../layouts/Markdown.astro"
+title: List | grandcolline
 ---
-
-<div className="content">
 
 # List
 
@@ -34,5 +32,3 @@ meta:
 - [grandcolline_512.png](/img/icons/grandcolline_512.png)
 - [grandcolline_maskable_196.png](/img/icons/grandcolline_maskable_196.png)
 - [grandcolline_maskable_512.png](/img/icons/grandcolline_maskable_512.png)
-
-</div>

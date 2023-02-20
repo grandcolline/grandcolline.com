@@ -1,0 +1,26 @@
+---
+import "../styles/global.css";
+import "../styles/markdown.css";
+
+const { frontmatter } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <title>{frontmatter.title}</title>
+    <meta name="description" content={frontmatter.description} />
+    <link rel="manifest" href="/manifest.json" />
+    <link
+      rel="apple-touch-icon"
+      sizes="192x192"
+      href="/img/icons/grandcolline_196.png"
+    />
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

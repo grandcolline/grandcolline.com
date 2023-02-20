@@ -1,101 +1,91 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@layer base {
-  body {
-    @apply font-metro;
-  }
-}
-
-/* --------------------------------
- *   CSS for Markdown Contents
- * -------------------------------- */
-/* Global */
-.content {
+body {
   @apply leading-relaxed text-sm md:w-700 w-4/5 mx-auto my-10;
 }
-
 @screen sm {
-  .content {
+  body {
     @apply text-base;
   }
 }
 
 /* Headers */
-.content h1 {
+h1 {
   @apply font-gilmer text-2xl mt-8 pt-2 mb-4 font-semibold;
 }
-.content h2 {
+h2 {
   @apply font-gilmer text-xl mt-12 pt-2 mb-4 font-semibold;
 }
-.content h3,
-.content h4,
-.content h5,
-.content h6 {
+h3,
+h4,
+h5,
+h6 {
   @apply text-lg mt-3 mb-2 font-semibold;
 }
 
 @screen sm {
-  .content h1 {
+  h1 {
     @apply text-3xl;
   }
-  .content h2 {
+  h2 {
     @apply text-2xl;
   }
-  .content h3,
-  .content h4,
-  .content h5,
-  .content h6 {
+  h3,
+  h4,
+  h5,
+  h6 {
     @apply text-xl;
   }
 }
 
 /* Links */
-.content a {
+a {
   @apply text-blue-600;
 }
-.content a:hover {
+a:hover {
   @apply underline;
 }
+
 /* Paragraph */
-.content p {
+p {
   @apply mb-6 text-zinc-600;
 }
+
 /* Lists */
-.content ul,
-.content ol {
+ul,
+ol {
   @apply mb-4 ml-8;
 }
-.content li {
+li {
   @apply mb-2;
 }
 
-.content ol {
+ol {
   @apply list-decimal;
 }
-.content ul {
+ul {
   @apply list-disc;
 }
+
 /* Blockquotes */
-.content blockquote {
+blockquote {
   @apply p-2 mx-6 bg-gray-100 mb-4 border-l-4 border-gray-400 italic;
 }
-.content blockquote > p {
+blockquote > p {
   @apply mb-0;
 }
+
 /* Tables */
-.content td,
-.content th {
+td,
+th {
   @apply px-2 py-1 border border-gray-400;
 }
-.content tr:nth-child(odd) {
+tr:nth-child(odd) {
   @apply bg-gray-100;
 }
-.content table {
+table {
   @apply mb-6;
 }
+
 /* Code */
-.content pre code {
+pre code {
   @apply text-sm m-5 p-5 rounded;
 }
