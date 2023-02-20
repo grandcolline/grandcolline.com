@@ -1,6 +1,6 @@
 # grandcolline.com
 
-シンプルな静的ページ
+シンプルな静的ページ (Astro + TailWind CSS + MDX)
 
 ## URL
 
