@@ -23,7 +23,6 @@ title: List | grandcolline
 ## Contents
 
 - [Chrome 拡張プライバシーポリシー](/contents/policy-for-chrome-extention)
-- [Notes](/notes)
 
 ## Images
 
