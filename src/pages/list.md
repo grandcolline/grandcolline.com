@@ -13,6 +13,8 @@ title: List | grandcolline
 - [note](https://note.com/grandcolline/)
 - [keybase](https://keybase.io/grandcolline/)
 - [soundcloud](https://soundcloud.com/grandcolline/)
+- [youtube](https://youtube.com/@grandcolline/)
+- [filmarks](https://filmarks.com/users/grandcolline/)
 - [はてなブックマーク](https://b.hatena.ne.jp/grandcolline/bookmark)
 
 ## Works

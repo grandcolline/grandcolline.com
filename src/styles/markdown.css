@@ -9,10 +9,10 @@ body {
 
 /* Headers */
 h1 {
-  @apply font-gilmer text-2xl mt-8 pt-2 mb-4 font-semibold;
+  @apply font-gilmer text-2xl mt-12 py-2 mb-4 font-semibold border-b;
 }
 h2 {
-  @apply font-gilmer text-xl mt-12 pt-2 mb-4 font-semibold;
+  @apply font-gilmer text-xl mt-12 py-2 mb-4 font-semibold border-b;
 }
 h3,
 h4,
