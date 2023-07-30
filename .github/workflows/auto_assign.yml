@@ -1,0 +1,22 @@
+name: Auto Assign
+
+on:
+  pull_request:
+    types:
+      - opened
+      - ready_for_review
+
+jobs:
+  assign:
+    if: github.actor != 'dependabot[bot]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 1
+
+    steps:
+      - run: |
+          gh pr edit ${{ github.event.pull_request.number }} \
+            --add-assignee ${{ github.event.pull_request.user.login }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        if: ${{ toJSON(github.event.pull_request.assignees) == '[]' }}

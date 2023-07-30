@@ -1,0 +1,23 @@
+name: Setup
+
+runs:
+  using: "composite"
+  steps:
+    - name: Read .nvmrc
+      id: nvm
+      shell: bash
+      run: echo "NVMRC=$(cat .nvmrc)" >> $GITHUB_OUTPUT
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ steps.nvm.outputs.NVMRC }}
+    - uses: actions/cache@v3
+      id: node_modules_cache_id
+      env:
+        cache-name: cache-node-modules
+      with:
+        path: "**/node_modules"
+        key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
+    - name: Install Node Modules
+      shell: bash
+      run: npm ci
