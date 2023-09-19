@@ -7,7 +7,7 @@ title: List | grandcolline
 
 ## SNS
 
-- [twitter](https://twitter.com/grandcolline)
+- [x](https://x.com/grandcolline)
 - [instagram](https://www.instagram.com/grandcolline)
 - [github](https://github.com/grandcolline/)
 - [note](https://note.com/grandcolline/)
@@ -15,6 +15,7 @@ title: List | grandcolline
 - [soundcloud](https://soundcloud.com/grandcolline/)
 - [youtube](https://youtube.com/@grandcolline/)
 - [filmarks](https://filmarks.com/users/grandcolline/)
+- [substack](https://substack.com/@grandcolline)
 - [はてなブックマーク](https://b.hatena.ne.jp/grandcolline/bookmark)
 
 ## Works
