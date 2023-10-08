@@ -15,11 +15,11 @@
 
 ```bash
 # install package
-$ npm ci
+$ pnpm install
 
 # serve
-$ npm run dev
+$ pnpm run dev
 
 # build
-$ npm run build
+$ pnpm run build
 ```
