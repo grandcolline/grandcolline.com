@@ -7,17 +7,30 @@ runs:
       id: nvm
       shell: bash
       run: echo "NVMRC=$(cat .nvmrc)" >> $GITHUB_OUTPUT
-    - name: Setup Node.js
+
+    - name: Install Node.js
       uses: actions/setup-node@v3
       with:
         node-version: ${{ steps.nvm.outputs.NVMRC }}
-    - uses: actions/cache@v3
-      id: node_modules_cache_id
-      env:
-        cache-name: cache-node-modules
+
+    - uses: pnpm/action-setup@v2
+      name: Install pnpm
       with:
-        path: "**/node_modules"
-        key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
-    - name: Install Node Modules
+        version: 8
+        run_install: false
+
+    - name: Get pnpm store directory
       shell: bash
-      run: npm ci
+      run: echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
+
+    - uses: actions/cache@v3
+      name: Setup pnpm cache
+      with:
+        path: ${{ env.STORE_PATH }}
+        key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+        restore-keys: |
+          ${{ runner.os }}-pnpm-store-
+
+    - name: Install dependencies
+      shell: bash
+      run: pnpm install
