@@ -17,7 +17,7 @@ jobs:
       - name: Setup
         uses: ./.github/actions/setup
       - name: Format
-        run: npm run fmt
+        run: pnpm run fmt
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: format (Auto Commit)
