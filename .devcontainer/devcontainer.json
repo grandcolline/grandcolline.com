@@ -1,7 +1,14 @@
+// refs: https://containers.dev/implementors/json_reference/
 {
   "name": "grandcolline.com",
   "image": "mcr.microsoft.com/devcontainers/typescript-node:0-18",
-  "forwardPorts": [
-    4321 // for astro
-  ]
+  "forwardPorts": 4321, // for astro dev server
+  "appPort": 4321, // devcontainer/cli が forwardPorts に対応していないため、appPort も使っている
+  "postCreateCommand": "pnpm install", // コンテナ作成後に、モジュールインストールを実行
+
+  "customizations": {
+    "vscode": {
+      "extensions": ["astro-build.astro-vscode"]
+    }
+  }
 }
