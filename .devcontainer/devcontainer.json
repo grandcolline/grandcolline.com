@@ -2,9 +2,9 @@
 {
   "name": "grandcolline.com",
   "image": "mcr.microsoft.com/devcontainers/typescript-node:0-18",
-  "forwardPorts": 4321, // for astro dev server
+  "forwardPorts": [4321], // for astro dev server
   "appPort": 4321, // devcontainer/cli が forwardPorts に対応していないため、appPort も使っている
-  "postCreateCommand": "pnpm install", // コンテナ作成後に、モジュールインストールを実行
+  "postCreateCommand": "pnpm config set store-dir /home/node/.local/share/pnpm/store && pnpm install", // コンテナ作成後に、モジュールインストールを実行
 
   "customizations": {
     "vscode": {
