@@ -1,0 +1,7 @@
+{
+  "name": "grandcolline.com",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:0-18",
+  "forwardPorts": [
+    4321 // for astro
+  ]
+}
