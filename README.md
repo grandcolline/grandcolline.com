@@ -30,7 +30,7 @@ $ pnpm run dev
 また、[VS Code](https://code.visualstudio.com/) / [Docker](https://www.docker.com/) / [Remote Development](https://github.com/Microsoft/vscode-remote-release) を使えば、ローカルで Codespaces と同じように開発ができます.
 
 <details>
-<summary>もし、他の方法で開発をするなら、 [devcontainer/cli](https://github.com/devcontainers/cli) を使うこともできます</summary>
+<summary>もし、他の方法で開発をするなら @devcontainer/cli を使うこともできます</summary>
 
 ```bash
 # Setup Docker Container
