@@ -22,6 +22,8 @@ $ pnpm run build
 
 開発は、GitHub Codespaces を使うと楽です.
 
+
+### Commands
 ```bash
 # Running Dev Server
 $ pnpm run dev
@@ -30,8 +32,7 @@ $ pnpm run dev
 $ pnpm run fmt
 ```
 
-下記のツールなどで, ローカルのコンテナで開発することもできます.
-
-- [Docker](https://www.docker.com/): 必須
-- [Visual Studio Code](https://code.visualstudio.com/) with [Remote Development](https://github.com/Microsoft/vscode-remote-release): VSCode を使う場合
-- [@devcontainer/cli](https://github.com/devcontainers/cli): vim/emacs を使う場合
+> [!NOTE]
+> ローカルでコンテナを使って開発することもできます.
+> * VS Code User 👉 [Docker](https://www.docker.com/) + [Visual Studio Code](https://code.visualstudio.com/) with [Remote Development](https://github.com/Microsoft/vscode-remote-release)
+> * Other Editor User 👉 [Docker](https://www.docker.com/) + [@devcontainer/cli](https://github.com/devcontainers/cli)
