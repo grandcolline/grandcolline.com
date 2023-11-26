@@ -17,6 +17,8 @@ title: List | grandcolline
 - [filmarks](https://filmarks.com/users/grandcolline/)
 - [substack](https://substack.com/@grandcolline)
 - [はてなブックマーク](https://b.hatena.ne.jp/grandcolline/bookmark)
+- [nostr](https://snort.social/nprofile1qqsff70pd3thh8dsj6l069afgstpau46353208sdx80m234zt3apg6cpzamhxue69uhhyetvv9ujumn0wd68ytnfdenx7tcppemhxue69uhkummn9ekx7mp0qy2hwumn8ghj7un9d3shjtnyv9kh2uewd9hj7hyavuc)
+- [bluesky](https://bsky.app/profile/grandcolline.bsky.social)
 
 ## Works
 
