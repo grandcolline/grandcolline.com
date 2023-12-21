@@ -4,6 +4,6 @@
 
 @layer base {
   body {
-    @apply font-metro;
+    @apply font-inter leading-relaxed text-base md:w-700 w-full mx-auto p-6 text-zinc-900;
   }
 }

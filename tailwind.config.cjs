@@ -7,8 +7,7 @@ module.exports = {
         700: "700px",
       },
       fontFamily: {
-        gilmer: ["gilmer-web", "Gilmer", "sans-serif"],
-        metro: ["metro-web", "Menlo", "sans-serif"],
+        inter: ["Inter", "GenJyuuGothicL", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Meiryo,sans-serif"],
       },
     },
   },
