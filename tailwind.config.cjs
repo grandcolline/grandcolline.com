@@ -4,11 +4,12 @@ module.exports = {
   theme: {
     extend: {
       width: {
+        600: "600px",
         700: "700px",
+        750: "750px",
       },
       fontFamily: {
-        gilmer: ["gilmer-web", "Gilmer", "sans-serif"],
-        metro: ["metro-web", "Menlo", "sans-serif"],
+        inter: ["Inter", "GenJyuuGothicL", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Meiryo,sans-serif"],
       },
     },
   },
