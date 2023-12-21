@@ -4,9 +4,7 @@ module.exports = {
   theme: {
     extend: {
       width: {
-        600: "600px",
         700: "700px",
-        750: "750px",
       },
       fontFamily: {
         inter: ["Inter", "GenJyuuGothicL", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Meiryo,sans-serif"],
