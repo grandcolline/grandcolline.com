@@ -15,6 +15,8 @@ title: List | grandcolline
 - [soundcloud](https://soundcloud.com/grandcolline/)
 - [youtube](https://youtube.com/@grandcolline/)
 - [filmarks](https://filmarks.com/users/grandcolline/)
+- [ブクログ](https://booklog.jp/users/grandcolline)
+- [stats.fm](https://stats.fm/grandcolline)
 - [substack](https://substack.com/@grandcolline)
 - [はてなブックマーク](https://b.hatena.ne.jp/grandcolline/bookmark)
 - [nostr](https://snort.social/nprofile1qqsff70pd3thh8dsj6l069afgstpau46353208sdx80m234zt3apg6cpzamhxue69uhhyetvv9ujumn0wd68ytnfdenx7tcppemhxue69uhkummn9ekx7mp0qy2hwumn8ghj7un9d3shjtnyv9kh2uewd9hj7hyavuc)
@@ -24,6 +26,7 @@ title: List | grandcolline
 
 - [Track Search](https://track.grandcolline.com)
 - [2593.cafe](https://www.2593.cafe)
+- [Weekly Contents](https://wc.local-host.club)
 
 ## Contents
 
