@@ -32,6 +32,8 @@ title: List | grandcolline
 
 - [年間ベストアルバム・アイドルソング](/contents/of-the-year)
 - [Chrome 拡張プライバシーポリシー](/contents/policy-for-chrome-extention)
+- [2024年コンテンツまとめ](/contents/2024-contents)
+- [2025年コンテンツまとめ](/contents/2025-contents)
 
 ## Images
 
