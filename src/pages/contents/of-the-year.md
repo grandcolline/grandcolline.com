@@ -6,6 +6,7 @@ title: "年ベス | grandcolline"
 # 年ベス
 
 ## 2024年 アルバム
+
 - Tapir! - The Pilgrim, Their God and the King of My Decrepit Mountain
 - The Snuts - Millennials
 - bby - 1
@@ -18,6 +19,7 @@ title: "年ベス | grandcolline"
 - MONO NO AWARE - ザ・ビュッフェ
 
 ## 2024年 アイドルソング
+
 - ねおち - ねおちしていたら108年経ってましたワzzZ
 - fishbowl - 一雨
 - 開歌 - 宝石ディスコ
@@ -34,6 +36,7 @@ title: "年ベス | grandcolline"
 - ILLIT - Magnetic
 
 ## 2023年 アルバム
+
 - The Japanese House - In the End It Always Does
 - Arlo Park - My Soft Machine
 - Bombay Bicycle Club - My Big Day
@@ -46,10 +49,9 @@ title: "年ベス | grandcolline"
 - ジョナゴールド - WEEKEND
 - ポップしなないで - 戦略的生存
 - パソコン音楽クラブ - FINE LINE
-- måneskin - RUSH!
-- JAWNY - It’s Never Fair, Always True
 
 ## 2023年 アイドルソング
+
 - タイトル未定 - 栞
 - 櫻坂46 - 静寂の暴力
 - Ringwanderung - Lily
@@ -61,9 +63,6 @@ title: "年ベス | grandcolline"
 - FAREWELL, MY L.u.v & BYNORAL - Stargazing (feat. 山添みなみ)
 - ねおち - をやすみゆうれい
 - ano - ちゅ、多様性
-- 私立恵比寿中学 - kyo-do?
-- さとりモンスター - 神話級ハッピーエンド
-- きゅ〜くる - Pa la la
 - fishbowl - 八月
 - ばってん少女隊 - あんたがさどこさ
 - NewJeans - ditto
@@ -71,6 +70,7 @@ title: "年ベス | grandcolline"
 - FiftyFifty - Cupid
 
 ## 2022年 アルバム
+
 - The Snuts - Burn the Empire
 - The Wombats - Fix yourself, Not the World
 - Wet Leg - Wet Leg
@@ -85,6 +85,7 @@ title: "年ベス | grandcolline"
 - SAKA-SAMA - 万祝
 
 ## 2022年 アイドルソング
+
 - FRUITS ZIPPER - わたしの一番かわいいところ
 - femme fatal - だいしきゅーだいしゅき
 - ジョナゴールド - バジマリズム
@@ -99,6 +100,7 @@ title: "年ベス | grandcolline"
 - さよならステイチューン - 旬をすすめ
 
 ## 2021年 アルバム
+
 - Inhaler - It Won’t Always Be Like This
 - Maneskin - Teatro d’ira
 - Black midi - Cavalcade
@@ -109,6 +111,7 @@ title: "年ベス | grandcolline"
 - にしな - odds and ends
 
 ## 2021年 アイドルソング
+
 - fishbowl - 深海
 - ばってん少女隊 - わたし、恋始めたってよ！
 - RYUTist - 水硝子
@@ -124,6 +127,7 @@ title: "年ベス | grandcolline"
 - カナミル - Last Summer Girl
 
 ## 2020年 アルバム
+
 - Sports Team - Deep Down Happy
 - beabadoobee - Fake It Flowers
 - Vistas - Everything Changes in the End
@@ -136,6 +140,7 @@ title: "年ベス | grandcolline"
 - RYUTist - ファルセット
 
 ## 2020年 アイドルソング
+
 - sora tob sakana - unite
 - 根本凪 - ゆめをみる
 - 963 - 再遭い
@@ -148,6 +153,7 @@ title: "年ベス | grandcolline"
 - ばってん少女隊 - Dancer in the night
 
 ## 2019年 アルバム
+
 - Circa Waves - What’s It Like Over There?
 - Billie Eilish - When We All Fall Asleep, Where Do We Go?
 - Stella Donnelly - Beware of the Dogs
@@ -160,6 +166,7 @@ title: "年ベス | grandcolline"
 - 桜エビ〜ず - octave
 
 ## 2018年 アルバム
+
 - Superorganism - Superorganism
 - The Lemmon Twigs - Go to School
 - Arctic Monkeys - Tranquility Bace Hotel & Casino
@@ -172,6 +179,7 @@ title: "年ベス | grandcolline"
 - Maison book girl - yume
 
 ## 2018年 アイドルソング
+
 - STU48 - 暗闇
 - nuance - Sanzan
 - 桜エビ〜ず - リンドバーグ
@@ -186,6 +194,7 @@ title: "年ベス | grandcolline"
 - 里咲りさ - 中央快速ハミングバード
 
 ## 2017年 アルバム
+
 - Kasabian - For Crying Out Loud
 - Passion Pit - Tremendous Sea of Love
 - Liam Gallager - As You Were
@@ -196,7 +205,7 @@ title: "年ベス | grandcolline"
 - パスピエ - &DNA
 - サニーデイ・サービス - Popcorn Ballads
 - 欅坂46 - 真っ白なものは汚したくなる
-- NG’s HFBs - Who Build Tne Moon？
+- Noel Gallagher’s High Flying Birds - Who Build Tne Moon？
 - maison book girl - image
 - ばってん少女隊 -マストバイ
 - have a nice day! - Fantastic Drag
@@ -205,6 +214,7 @@ title: "年ベス | grandcolline"
 - coldplay - Kaleidoscope
 
 ## 2015年 アルバム
+
 - Passion Pit - Kindred
 - The Libertines - Anthem For Doomed Youth
 - Blur - The Magic Whip
@@ -214,6 +224,7 @@ title: "年ベス | grandcolline"
 - DAOKO - DAOKO
 
 ## 2015年 アイドルソング
+
 - おやすみホログラム - note
 - AKB48 - 僕たちは戦わない
 - ポップコーンチルドレン(HKT48) - 微笑みポップコーン
