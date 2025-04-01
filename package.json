@@ -7,16 +7,15 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "fmt": "prettier -w ./src"
+    "check": "biome check --write ./src"
   },
   "dependencies": {
-    "@astrojs/mdx": "^3.1.5",
-    "@astrojs/tailwind": "^5.1.0",
-    "astro": "^4.15.3",
-    "tailwindcss": "^3.4.10"
+    "astro": "^5.5.6"
   },
   "devDependencies": {
-    "prettier": "^3.3.3",
-    "prettier-plugin-astro": "^0.14.1"
+    "@biomejs/biome": "1.9.4",
+    "@unocss/reset": "^66.1.0-beta.8",
+    "@unocss/transformer-directives": "^66.1.0-beta.8",
+    "unocss": "^66.1.0-beta.8"
   }
 }
