@@ -30,6 +30,7 @@ title: List | grandcolline
 
 ## Contents
 
+- [年間ベストアルバム・アイドルソング](/contents/of-the-year)
 - [Chrome 拡張プライバシーポリシー](/contents/policy-for-chrome-extention)
 
 ## Images
