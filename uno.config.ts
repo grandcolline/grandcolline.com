@@ -1,7 +1,11 @@
 import { defineConfig, presetWind3 } from "unocss";
 
 export default defineConfig({
-  include: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
+  content: {
+    pipeline: {
+      include: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
+    },
+  },
   presets: [presetWind3()],
   theme: {
     width: {
