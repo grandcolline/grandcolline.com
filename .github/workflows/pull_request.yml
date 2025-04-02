@@ -1,23 +1,46 @@
-name: Pull Request
-
-on:
-  pull_request:
-    branches:
-      - main
-
+name: PR
+on: [pull_request]
 jobs:
-  format:
-    name: Format
+  biome:
+    name: Biome
     runs-on: ubuntu-latest
     permissions:
-      contents: write # for commit and push to GitHub.
+      contents: read
+      pull-requests: write
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Setup
-        uses: ./.github/actions/setup
-      - name: Format
-        run: pnpm run fmt
-      - uses: stefanzweifel/git-auto-commit-action@v4
+      - uses: actions/checkout@v4
+      - uses: mongolyy/reviewdog-action-biome@v1
         with:
-          commit_message: format (Auto Commit)
+          github_token: ${{ secrets.github_token }}
+          reporter: github-pr-review
+
+  typos:
+    name: Typos
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: reviewdog/action-typos@v1
+        with:
+          github_token: ${{ secrets.github_token }}
+          reporter: github-pr-review
+
+  #test:
+  #  name: Test
+  #  runs-on: ubuntu-latest
+  #  steps:
+  #    - uses: actions/checkout@v4
+  #    - uses: oven-sh/setup-bun@v2
+  #    - run: bun install --frozen-lockfile
+  #    - run: bun test
+
+  #typecheck:
+  #  name: TypeCheck
+  #  runs-on: ubuntu-latest
+  #  steps:
+  #    - uses: actions/checkout@v4
+  #    - uses: oven-sh/setup-bun@v2
+  #    - run: bun install --frozen-lockfile
+  #    - run: bun run typecheck
