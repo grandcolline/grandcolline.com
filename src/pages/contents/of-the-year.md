@@ -205,7 +205,7 @@ title: "年ベス | grandcolline"
 - パスピエ - &DNA
 - サニーデイ・サービス - Popcorn Ballads
 - 欅坂46 - 真っ白なものは汚したくなる
-- Noel Gallagher’s High Flying Birds - Who Build Tne Moon？
+- Noel Gallagher’s High Flying Birds - Who Build The Moon？
 - maison book girl - image
 - ばってん少女隊 -マストバイ
 - have a nice day! - Fantastic Drag

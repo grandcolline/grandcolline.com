@@ -5,7 +5,7 @@ title: "2025年コンテンツまとめ | grandcolline"
 
 # 2025年コンテンツまとめ
 
-2025年おもしろいと思った、音楽、映画、小説、ラジオ、イベントなど。生きた証。
+2025年おもしろいと思った、音楽、映画、小説、ラジオ、イベントなど
 
 ## 1月
 
@@ -29,18 +29,18 @@ title: "2025年コンテンツまとめ | grandcolline"
 
 - 🎫 LIVE LOBSTER 2025
 - 🎫 千葉雅也・福尾匠
-- 🎸 合歓る
+- 🎸 Laura day romance「合歓る」
 - 📻 ダウ9億9万
-- 🎞️ アフターサン
+- 🎞️ シャーロット・ウェルズ「アフターサン」
 - 🎸 Test for Texture of Text
-- 🎞️ blur to the end
+- 🎞️ 「blur：To The End」
 - 🎫 きしたかののぶたぴえろサーカスナイト vol.1
-- 📖 座談会9
+- 📖 鈴木一平＋なまけ＋山本浩貴「座談会9」
 - 🎸 baby - kiki
 - 📻 品品団地「これからの本屋と出版業」
-- 🎞️ ファーストキス
-- 🎞️ 台風クラブ
-- 🎸 Matter Does Not Define - The Lathums
+- 🎞️ 塚原あゆ子「ファーストキス 1ST KISS」
+- 🎞️ 相米慎二「台風クラブ」
+- 🎸 The Lathums「Matter Does Not Define」
 
 ## 3月
 
