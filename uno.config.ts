@@ -1,4 +1,5 @@
 import { defineConfig, presetWind3 } from "unocss";
+import presetWebFonts from "@unocss/preset-web-fonts";
 
 export default defineConfig({
   content: {
@@ -6,14 +7,17 @@ export default defineConfig({
       include: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
     },
   },
-  presets: [presetWind3()],
+  presets: [
+    presetWind3(),
+    presetWebFonts({
+      provider: "google",
+      fonts: {
+        sg: ["Sawarabi Gothic", "Inter"],
+        vt323: ["VT323", "Inter"],
+      },
+    }),
+  ],
   theme: {
-    width: {
-      "700": "700px",
-    },
-    fontFamily: {
-      inter:
-        "Inter, GenJyuuGothicL, Hiragino Kaku Gothic ProN, Hiragino Sans, Meiryo, sans-serif",
-    },
+    width: { "700": "700px" },
   },
 });
