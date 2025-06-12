@@ -7,7 +7,7 @@
     "build": "astro build",
     "preview": "astro dev",
     "astro": "astro",
-    "check": "biome check --write ./src",
+    "check": "biome check --write .",
     "deploy": "astro build && wrangler deploy",
     "cf-typegen": "wrangler types"
   },

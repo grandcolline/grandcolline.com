@@ -1,19 +1,19 @@
 // @ts-check
 import cloudflare from "@astrojs/cloudflare";
+import cloudflare from "@astrojs/cloudflare";
 import transformerDirective from "@unocss/transformer-directives";
-import { defineConfig } from 'astro/config';
-import UnoCSS from 'unocss/astro';
-import transformerDirective from '@unocss/transformer-directives'
-import cloudflare from '@astrojs/cloudflare';
+import transformerDirective from "@unocss/transformer-directives";
+import { defineConfig } from "astro/config";
+import UnoCSS from "unocss/astro";
 
 // https://astro.build/config
 export default defineConfig({
   adapter: cloudflare({
     platformProxy: {
-      enabled: true
+      enabled: true,
     },
 
-    imageService: "cloudflare"
+    imageService: "cloudflare",
   }),
   integrations: [
     UnoCSS({

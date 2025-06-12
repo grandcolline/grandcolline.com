@@ -11,7 +11,7 @@
         "noReactSpecificProps": "off" // React 特有のプロパティは使用するため
       },
       "style": {
-        "noDefaultExport": "off",        // remix のお作法として, default export を使用するため
+        "noDefaultExport": "off", // remix のお作法として, default export を使用するため
         "useFilenamingConvention": "off" // remix の機能としてファイル名に変数を使うため
       }
     },
@@ -24,7 +24,8 @@
   "formatter": {
     "enabled": true,
     "indentStyle": "space",
-    "indentWidth": 2
+    "indentWidth": 2,
+    "ignore": ["worker-configuration.d.ts"]
   },
   "javascript": {
     "globals": ["Env"]
