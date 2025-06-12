@@ -44,3 +44,62 @@ jobs:
   #    - uses: oven-sh/setup-bun@v2
   #    - run: bun install --frozen-lockfile
   #    - run: bun run typecheck
+
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v2
+
+      - name: Install dependencies
+        run: bun install
+
+      - name: Build
+        run: bun run build
+
+      - name: Deploy Preview
+        id: deploy-preview
+        uses: cloudflare/wrangler-action@v3
+        with:
+          # CLOUDFLARE_ACCOUNT_ID
+          #  - Cloudflare ダッシュボード > Workers & Pages > Overview で確認
+          #  - 右側のサイドバーに表示されています
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          # CLOUDFLARE_API_TOKEN
+          #  - Cloudflare ダッシュボード > My Profile > API Tokens で作成
+          #  - 必要な権限: "Cloudflare Workers Scripts:Edit"
+          #  - Account リソースへのアクセスも必要
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          command: versions upload --message "Deployed pages by GitHub Actions branch ${{ github.ref_name }}"
+
+      - name: Create comment file
+        if: always()
+        env:
+          STATUS: '${{ steps.deploy-preview.outcome }}'
+          URL: '${{ steps.deploy-preview.outputs.deployment-url }}'
+        run: |
+          cat  << EOF > comment.md
+          ## 🚀 Deploying Cloudflare Workers
+          <table>
+            <tr>
+              <th>Env</th>
+              <th>Status</th>
+              <th>Preview URL</th>
+            </tr>
+            <tr>
+              <td scope="row">Preview</td>
+              <td>$STATUS</td>
+              <td><a href="$URL" target="_blank" rel="noopener noreferrer">$URL</a></td>
+            </tr>
+          </table>
+
+          *Pusher: @${{ github.actor }}, Commit: ${{ github.event.pull_request.head.sha }}*
+          EOF
+
+      - name: Comment
+        if: always()
+        uses: thollander/actions-comment-pull-request@v3
+        with:
+          file-path: comment.md
+          comment-tag: deploy
