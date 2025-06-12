@@ -27,7 +27,8 @@ jobs:
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           # CLOUDFLARE_API_TOKEN
           #  - Cloudflare ダッシュボード > My Profile > API Tokens で作成
-          #  - 必要な権限: "Cloudflare Workers Scripts:Edit"
-          #  - Account リソースへのアクセスも必要
+          #  - 必要な権限:
+          #    - Account > Workers Scripts > Edit
+          #    - Zone > Workers Routes > Edit (カスタムドメインを使う場合)
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           command: deploy
