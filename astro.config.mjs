@@ -1,4 +1,6 @@
 // @ts-check
+import cloudflare from "@astrojs/cloudflare";
+import transformerDirective from "@unocss/transformer-directives";
 import { defineConfig } from 'astro/config';
 import UnoCSS from 'unocss/astro';
 import transformerDirective from '@unocss/transformer-directives'
