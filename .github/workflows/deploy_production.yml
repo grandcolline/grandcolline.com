@@ -30,4 +30,4 @@ jobs:
           #  - 必要な権限: "Cloudflare Workers Scripts:Edit"
           #  - Account リソースへのアクセスも必要
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          command: deploy --message "Deployed to production by GitHub Actions commit ${{ github.sha }}"
+          command: deploy
