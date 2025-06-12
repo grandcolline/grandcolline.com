@@ -17,11 +17,11 @@
   },
   "routes": [
     {
-      "pattern": "grandcolline.com/*",
+      "pattern": "grandcolline.com",
       "custom_domain": true
     },
     {
-      "pattern": "www.grandcolline.com/*",
+      "pattern": "www.grandcolline.com",
       "custom_domain": true
     }
   ]
