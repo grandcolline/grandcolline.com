@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
-    "preview": "astro build && wrangler dev",
+    "preview": "astro dev",
     "astro": "astro",
     "check": "biome check --write ./src",
     "deploy": "astro build && wrangler deploy",
