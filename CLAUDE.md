@@ -24,7 +24,7 @@
 
 ## Core Architecture
 
-- **フレームワーク**: Astro 5.7.13（静的サイト生成）
+- **フレームワーク**: Astro（静的サイト生成）
 - **スタイリング**: UnoCSS（WindiCSS v3プリセット使用）
 - **パッケージマネージャー**: Bun（`bun.lockb`が存在）
 - **コード品質**: Biome（フォーマッターのみ、リンターは無効）
@@ -33,7 +33,7 @@
 ## Commands
 
 - `bun install` - 依存パッケージをインストール（初回セットアップ時のみ必要）
-- `bun run dev` - 開発サーバーをHMR付きで起動 (http://localhost:5173)
+- `bun run dev` - 開発サーバーをHMR付きで起動 (http://localhost:4321)
 - `bun run build` - プロダクション用ビルド
 - `bun run preview` - 本番ビルドのプレビュー
 - `bun run check` - コードフォーマット・インポート整理
