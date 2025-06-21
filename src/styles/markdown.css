@@ -21,6 +21,7 @@ a:hover {
 /* Paragraph */
 p {
   @apply mb-8;
+  @apply text-justify;
 }
 
 /* Lists */
