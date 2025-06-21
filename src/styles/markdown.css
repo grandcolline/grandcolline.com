@@ -20,7 +20,7 @@ a:hover {
 
 /* Paragraph */
 p {
-  @apply mb-8;
+  @apply mb-8 text-justify hyphens-auto;
 }
 
 /* Lists */
