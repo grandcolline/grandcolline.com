@@ -47,7 +47,7 @@ title: "マークダウンデモページ | grandcolline"
   <img
     class="h-24 w-24 bg-white p-2 rounded-full shadow mb-2"
     src="/img/icons/grandcolline_256.png"
-    alt=""
+    alt="grandcolline logo"
   />
   <h1 class="font-semibold text-2xl mt-2">grandcolline</h1>
   <p
