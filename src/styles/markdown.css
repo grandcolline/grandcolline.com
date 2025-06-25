@@ -47,7 +47,10 @@ td,
 th {
   @apply px-2 py-1 border border-gray-400;
 }
-tr:nth-child(odd) {
+thead tr {
+  @apply bg-gray-100;
+}
+tbody tr:nth-child(even) {
   @apply bg-gray-100;
 }
 table {
@@ -55,6 +58,12 @@ table {
 }
 
 /* Code */
+:not(pre) > code {
+  @apply bg-gray-100 px-1 py-0.5 rounded text-sm;
+}
+pre {
+  @apply bg-gray-900 rounded overflow-x-auto mb-6;
+}
 pre code {
-  @apply text-sm m-5 p-5 rounded;
+  @apply block text-sm p-4 text-gray-100 bg-transparent;
 }
