@@ -42,7 +42,7 @@ title: "マークダウンデモページ | grandcolline"
 
 ---
 
-```
+```html
 <div class="flex flex-col gap-1 text-center items-center">
   <img
     class="h-24 w-24 bg-white p-2 rounded-full shadow mb-2"
