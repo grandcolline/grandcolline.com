@@ -61,4 +61,4 @@ title: "マークダウンデモページ | grandcolline"
 
 ## 画像
 
-![icon](/img/icons/grandcolline_256.png)
+![grandcollineのロゴ](/img/icons/grandcolline_256.png)
