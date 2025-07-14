@@ -8,7 +8,7 @@
     "preview": "astro dev",
     "astro": "astro",
     "check": "biome check --write .",
-    "deploy": "astro build && wrangler deploy",
+    "deploy": "wrangler deploy --env production",
     "cf-typegen": "wrangler types"
   },
   "dependencies": {
