@@ -12,16 +12,16 @@
     "cf-typegen": "wrangler types"
   },
   "dependencies": {
-    "@astrojs/cloudflare": "^12.5.4",
-    "astro": "^5.9.2"
+    "@astrojs/cloudflare": "^12.6.0",
+    "astro": "^5.11.1"
   },
   "devDependencies": {
-    "@biomejs/biome": "^1.9.4",
-    "@types/node": "^24.0.1",
-    "@unocss/preset-web-fonts": "^66.2.0",
-    "@unocss/reset": "^66.2.0",
-    "@unocss/transformer-directives": "^66.2.0",
-    "unocss": "^66.2.0",
-    "wrangler": "^4.19.2"
+    "@biomejs/biome": "^2.1.1",
+    "@types/node": "^24.0.14",
+    "@unocss/preset-web-fonts": "^66.3.3",
+    "@unocss/reset": "^66.3.3",
+    "@unocss/transformer-directives": "^66.3.3",
+    "unocss": "^66.3.3",
+    "wrangler": "^4.24.3"
   }
 }
