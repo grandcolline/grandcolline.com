@@ -1,14 +1,14 @@
 {
   "name": "grandcollinecom",
-  "compatibility_date": "2025-06-12",
   "main": "./dist/_worker.js/index.js",
+  "compatibility_date": "2025-06-12",
+  "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
   "assets": {
     "binding": "ASSETS",
     "directory": "./dist"
   },
   "workers_dev": true,
   "preview_urls": true,
-  "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
 
   "env": {
     // ---------------------------
