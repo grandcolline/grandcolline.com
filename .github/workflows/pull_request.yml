@@ -34,6 +34,7 @@ jobs:
           name: build-artifacts
           path: |
             dist/
+            .astro/
 
   deploy:
     name: Deploy
@@ -137,13 +138,13 @@ jobs:
 
 
   # コードの静的解析
-  analysis:
-    uses: grandcolline/.github/.github/workflows/code_analysis.yml@main
-    secrets: inherit
+  #analysis:
+  #  uses: grandcolline/.github/.github/workflows/code_analysis.yml@main
+  #  secrets: inherit
 
   # PR の設定確認
-  setting:
-    uses: grandcolline/.github/.github/workflows/auto_assign.yml@main
-    secrets: inherit
-    if: github.event.action == 'opened' || github.event.action == 'ready_for_review'
+  #setting:
+  #  uses: grandcolline/.github/.github/workflows/auto_assign.yml@main
+  #  secrets: inherit
+  #  if: github.event.action == 'opened' || github.event.action == 'ready_for_review'
 
