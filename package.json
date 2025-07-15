@@ -9,7 +9,7 @@
     "astro": "astro",
     "check": "biome check --write .",
     "deploy": "wrangler deploy --env production",
-    "cf-typegen": "wrangler types"
+    "typegen": "wrangler types"
   },
   "dependencies": {
     "@astrojs/cloudflare": "^12.6.0",
