@@ -53,6 +53,9 @@ jobs:
         with:
           name: build-artifacts
 
+      - run: ls -al .
+      - run: ls -al dist
+
       - name: Deploy
         id: deploy
         uses: cloudflare/wrangler-action@v3
