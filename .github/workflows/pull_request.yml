@@ -32,6 +32,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: build-artifacts
+          include-hidden-files: true
           path: |
             dist/
             .astro/
