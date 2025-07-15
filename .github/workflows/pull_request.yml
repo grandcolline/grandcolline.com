@@ -12,7 +12,8 @@ jobs:
     secrets: inherit
     with:
       command: versions upload --message "Deployed pages by GitHub Actions branch ${{ github.ref_name }}"
-      build-artifacts-path: dist/
+      build-artifacts-path: |
+        dist/
 
   # コードの静的解析
   analysis:
