@@ -1,0 +1,28 @@
+name: PR
+on: [pull_request]
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  # デリバリー（ビルド&デプロイ)
+  delivery:
+    uses: grandcolline/.github/.github/workflows/deploy_workers_with_bun.yml@main
+    secrets: inherit
+    with:
+      command: versions upload --message "Deployed by GitHub Actions (${{ github.ref_name }})"
+      artifacts-upload-path: dist/
+      artifacts-download-path: dist/
+
+  # コードの静的解析
+  analysis:
+    uses: grandcolline/.github/.github/workflows/code_analysis.yml@main
+    secrets: inherit
+
+  # PR の設定確認
+  setting:
+    uses: grandcolline/.github/.github/workflows/auto_assign.yml@main
+    secrets: inherit
+    if: github.event.action == 'opened' || github.event.action == 'ready_for_review'
+

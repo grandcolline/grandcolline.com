@@ -8,8 +8,8 @@
     "preview": "astro dev",
     "astro": "astro",
     "check": "biome check --write .",
-    "deploy": "astro build && wrangler deploy",
-    "cf-typegen": "wrangler types"
+    "deploy": "wrangler deploy --env production",
+    "typegen": "wrangler types"
   },
   "dependencies": {
     "@astrojs/cloudflare": "^12.6.0",

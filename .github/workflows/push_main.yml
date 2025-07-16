@@ -1,0 +1,14 @@
+name: Push Main
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    uses: grandcolline/.github/.github/workflows/deploy_workers_with_bun.yml@main
+    secrets: inherit
