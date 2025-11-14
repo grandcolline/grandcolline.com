@@ -1,4 +1,6 @@
 ---
+import "../styles/global.css";
+
 export interface Props {
   title: string;
   description: string;
@@ -22,7 +24,7 @@ const { title, description } = Astro.props;
       href="/img/icons/grandcolline_196.png"
     />
   </head>
-  <body class="font-inter leading-relaxed text-base md:w-700 w-full mx-auto p-6 text-zinc-900">
+  <body class="font-sans leading-relaxed text-base md:w-[700px] w-full mx-auto p-6 text-zinc-900">
     <slot />
   </body>
 </html>

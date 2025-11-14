@@ -1,8 +1,8 @@
 // @ts-check
+
 import cloudflare from "@astrojs/cloudflare";
-import transformerDirective from "@unocss/transformer-directives";
+import tailwindcss from "@tailwindcss/vite";
 import { defineConfig } from "astro/config";
-import UnoCSS from "unocss/astro";
 
 // https://astro.build/config
 export default defineConfig({
@@ -13,10 +13,8 @@ export default defineConfig({
 
     imageService: "cloudflare",
   }),
-  integrations: [
-    UnoCSS({
-      injectReset: true,
-      transformers: [transformerDirective()],
-    }),
-  ],
+
+  vite: {
+    plugins: [tailwindcss()],
+  },
 });
