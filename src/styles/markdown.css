@@ -1,3 +1,5 @@
+@import "tailwindcss" reference;
+
 /* Headers */
 h1 {
   @apply text-2xl mt-20 py-2 mb-14 font-medium text-center;

@@ -1,6 +1,6 @@
 # grandcolline.com
 
-シンプルな静的ページ (Astro + UnoCSS)
+シンプルな静的ページ (Astro + Tailwind CSS)
 
 ## URL
 

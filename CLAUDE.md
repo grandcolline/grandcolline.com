@@ -20,12 +20,12 @@
 
 ## Project Overview
 
-**grandcolline.com** は、Astro、UnoCSS、TypeScriptで構築された個人ポートフォリオサイトです。Cloudflare Pagesにデプロイされた静的サイトで、コンテンツ要約、年間「of-the-year」ページ、PWA機能を特徴としています。
+**grandcolline.com** は、Astro、Tailwind CSS、TypeScriptで構築された個人ポートフォリオサイトです。Cloudflare Pagesにデプロイされた静的サイトで、コンテンツ要約、年間「of-the-year」ページ、PWA機能を特徴としています。
 
 ## Core Architecture
 
 - **フレームワーク**: Astro（静的サイト生成）
-- **スタイリング**: UnoCSS（WindiCSS v3プリセット使用）
+- **スタイリング**: Tailwind CSS（カスタム設定で幅 700px とフォントを拡張）
 - **パッケージマネージャー**: Bun（`bun.lockb`が存在）
 - **コード品質**: Biome（フォーマッターのみ、リンターは無効）
 - **デプロイメント**: Cloudflare Pages
@@ -47,7 +47,7 @@
 
 ## Key Configuration Details
 
-- **UnoCSS**: WindiCSS v3プリセット、カスタムテーマ（width: 700px）、Google Fonts統合（Sawarabi Gothic、VT323、Inter）
+- **Tailwind CSS**: カスタムテーマ（width: 700px）、Google Fonts統合（Sawarabi Gothic、VT323、Inter）
 - **Biome**: 2スペースインデント、フォーマッター有効、リンター無効、organizeImports有効
 - **TypeScript**: 厳密なAstro設定
 - **PWA**: `public/`でマニフェストとアイコンを設定
