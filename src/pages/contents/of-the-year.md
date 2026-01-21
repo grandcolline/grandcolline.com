@@ -5,6 +5,36 @@ title: "年ベス | grandcolline"
 
 # 年ベス
 
+## 2025年 アルバム
+
+- Sombr - I barely Know Her
+- Royal Otis - hickey
+- oklou - Choke Enough
+- Pulp - More
+- The Lathums - Matter Does Not Define
+- Gigi Perez - At The Beach, In Every Life
+- Good Neighbours - Blue Sky Mentality
+- Balu Brigada - Portal
+- Laura day romance - 合歓る
+- ピーナッツくん - Tele俱楽部Ⅱ
+
+## 2025年 アイドルソング
+
+- CYNHN - わるいこと
+- lirical school - 朝の光
+- demipogune - ストゥッピキュー
+- ≠ME - カフェ樂園
+- AiScReam - 愛♡スクリ〜ム!
+- 超ときめき♡宣伝部 - 超最強
+- 東京女子流 - 証人
+- WHITE SCORPION - Beach opening
+- さよならステイチューン - STAY TUNE
+- 開歌 - 秋なので
+- ILLIT - Not Cure Anymore
+- KiiiKiii - DANCING ALONE
+- Video Girl - JK ?
+- HANA - Blue Jeans
+
 ## 2024年 アルバム
 
 - Tapir! - The Pilgrim, Their God and the King of My Decrepit Mountain
