@@ -21,7 +21,7 @@ title: "年ベス | grandcolline"
 ## 2025年 アイドルソング
 
 - CYNHN - わるいこと
-- lirical school - 朝の光
+- lyrical school - 朝の光
 - demipogune - ストゥッピキュー
 - ≠ME - カフェ樂園
 - AiScReam - 愛♡スクリ〜ム!
